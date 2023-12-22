@@ -1,0 +1,23 @@
+.container {
+    margin: 50px auto;
+    text-align: center;
+    background: black;
+}
+
+h2 {
+    color: #fff;
+}
+
+.carousel-inner {
+    border-radius: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    margin-top: 25%;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}

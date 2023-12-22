@@ -1,0 +1,14 @@
+.navbar {
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 6px -6px #777;
+    background-color: #ffffff35;
+}
+
+ul {
+    margin-left: 5%;
+}
+
+button {
+    margin-left: 2%;
+}

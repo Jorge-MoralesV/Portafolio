@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-nombre {
+    width: 50%;
+    text-align: center;
+}
+
+.contenedor-nombre h1 {
+    font-size: 100px;
+    color: #fff;
+}
+
+.contenedor-nombre p {
+    font-size: 30px;
+    color: #fff;
+}
+
+.foto {
+    width: 50%;
+}
+
+.foto img {
+    width: 100%;
+}
