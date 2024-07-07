@@ -1,8 +1,8 @@
 .navbar {
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 6px -6px #777;
-    background-color: #ffffff35;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
 }
 
 ul {
@@ -13,14 +13,14 @@ button {
     margin-left: 2%;
 }
 
-.scrollarriba{
+.scrollarriba {
     background-color: transparent;
     box-shadow: none;
     transition: .5s ease;
-   
+
 }
 
-.scrollabajo{
+.scrollabajo {
     background-color: #1b283d;
     transition: .5s ease;
 }

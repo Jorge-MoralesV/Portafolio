@@ -45,6 +45,7 @@ body {
     background: rgba(0, 0, 0, 0.3);
 }
 
+
 /* Contenido */
 .contenido {
     padding: 50px;
@@ -217,18 +218,3 @@ body {
     color: #000;
     font-weight: bold;
 }
-
-
-
-/*Prueba*/
-#elemento {
-    width: 100px;
-    height: 100px;
-    background: red;
-    transition: opacity 0.9s ease-in; /* Transición de opacidad */
-  }
-  
-  .oculto {
-    opacity: 0; /* Elemento oculto */
-  }
-  

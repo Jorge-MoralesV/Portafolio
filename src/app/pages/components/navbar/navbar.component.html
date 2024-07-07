@@ -1,10 +1,10 @@
 <nav [class.scrollarriba]="true" [class.scrollabajo]="scrollVisible"
-    class="navbar navbar-expand-lg fixed-top container">
+    class="navbar navbar-expand-lg fixed-top">
     <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div id="my-nav" class="collapse navbar-collapse">
+    <div id="my-nav" class="collapse navbar-collapse container">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
                 <a routerLink="" target="_parent" routerLinkActive="active" class="nav-link text-white">Home</a>
@@ -16,7 +16,7 @@
                 <a href="#proyectos" routerLinkActive="active" class="nav-link text-white">Proyectos</a>
             </li>
             <li class="nav-item">
-                <a routerLink="/contacto" routerLinkActive="active" class="nav-link text-white">Contacto</a>
+                <a href="#contact" class="nav-link text-white">Contacto</a>
             </li>
         </ul>
     </div>

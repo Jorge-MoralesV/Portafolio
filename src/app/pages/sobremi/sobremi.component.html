@@ -1,15 +1,14 @@
-<section class="container">
+<section class="container" id="acerca-de">
 
     <div class="botones">
-        <a [className]="tools ? 'derecho' : 'izquierdo'" (click)="cambio(false)" onclick="animar()" id="btn-left">Acerca
-            de</a>
-        <a [className]="tools ? 'izquierdo' : 'derecho'" (click)="cambio(true)" onclick="animar()"
-            id="btn-right">Herramientas</a>
+        <a [className]="tools ? 'derecho' : 'izquierdo'" (click)="cambio(false)" id="btn-left">Acerca de</a>
+        <a [className]="tools ? 'izquierdo' : 'derecho'" (click)="cambio(true)" id="btn-right">Herramientas</a>
     </div>
+
 
     <div class="contenido" id="contenido">
         <!-- Acerca de -->
-        <div @enterState class="acerca-de" id="acerca-de" *ngIf="tools === false">
+        <div class="acerca-de" *ngIf="tools === false">
             <p class="descripcion">{{description}}</p>
             <div class="tarjetas">
                 <div class="tarjeta back">
@@ -31,7 +30,7 @@
         </div>
 
         <!-- Herramientas -->
-        <div @enterState class="herramientas" id="herramientas" *ngIf="tools === true">
+        <div class="herramientas" id="herramientas" *ngIf="tools === true">
             <h2 class="lenguajes">Lenguajes y Tecnologias</h2>
             <div class="brands">
                 <div class="brand">

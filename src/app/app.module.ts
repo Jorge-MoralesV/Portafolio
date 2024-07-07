@@ -12,6 +12,7 @@ import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { SobremiComponent } from './pages/sobremi/sobremi.component';
 import { SuperiorComponent } from './pages/superior/superior.component';
 import { CarruselComponent } from './pages/carrusel/carrusel.component';
+import { FooterComponent } from './pages/components/footer/footer.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { CarruselComponent } from './pages/carrusel/carrusel.component';
     SobremiComponent,
     SuperiorComponent,
     CarruselComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
