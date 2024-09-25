@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   selector: 'app-sobremi',
   templateUrl: './sobremi.component.html',
   styleUrls: ['./sobremi.component.css'],
-  animations: [
+  /* animations: [
     trigger('enterState', [
       state('void', style({
         opacity: 0
@@ -17,12 +17,12 @@ import { Component } from '@angular/core';
         }))
       ])
     ]),
-  ]
+  ] */
 })
 
 export class SobremiComponent {
 
-  tools: boolean | undefined;
+  tools= false;
 
   constructor() {
 
@@ -45,5 +45,6 @@ export class SobremiComponent {
     this.tools = change;
     return this.tools;
   }
+  
 
 }

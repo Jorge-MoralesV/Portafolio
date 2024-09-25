@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class ProyectosComponent {
 
+abrirEnlace(url:string) {
+/* const url = "https://estudiossociologicos.colmex.mx/index.php/es"; */
+window.open(url, '_blank');
+}
+
 }

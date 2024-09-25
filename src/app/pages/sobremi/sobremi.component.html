@@ -1,15 +1,16 @@
+<br id="acerca-de">
+<br>
+<br>
 <section class="container">
 
     <div class="botones">
-        <a [className]="tools ? 'derecho' : 'izquierdo'" (click)="cambio(false)" onclick="animar()" id="btn-left">Acerca
-            de</a>
-        <a [className]="tools ? 'izquierdo' : 'derecho'" (click)="cambio(true)" onclick="animar()"
-            id="btn-right">Herramientas</a>
+        <a [className]="tools ? 'derecho' : 'izquierdo'" (click)="cambio(false)" id="btn-left">Acerca de</a>
+        <a [className]="tools ? 'izquierdo' : 'derecho'" (click)="cambio(true)" id="btn-right">Herramientas</a>
     </div>
 
     <div class="contenido" id="contenido">
         <!-- Acerca de -->
-        <div @enterState class="acerca-de" id="acerca-de" *ngIf="tools === false">
+        <div class="acerca-de" *ngIf="tools === false">
             <p class="descripcion">{{description}}</p>
             <div class="tarjetas">
                 <div class="tarjeta back">
@@ -31,7 +32,7 @@
         </div>
 
         <!-- Herramientas -->
-        <div @enterState class="herramientas" id="herramientas" *ngIf="tools === true">
+        <div class="herramientas" id="herramientas" *ngIf="tools === true">
             <h2 class="lenguajes">Lenguajes y Tecnologias</h2>
             <div class="brands">
                 <div class="brand">
@@ -76,11 +77,8 @@
             </div>
         </div>
 
-
-
-
-        <a href="https://drive.google.com/file/d/1Y2H-VQEHojqkB5aFu6_MGVZXv9e5YtJr/view?usp=sharing" target="_blank"
-            class="btn-cv">CV</a>
+        <!-- <a href="https://drive.google.com/file/d/1Y2H-VQEHojqkB5aFu6_MGVZXv9e5YtJr/view?usp=sharing" target="_blank" class="btn-cv">CV</a> -->
+        <app-boton routerLink="../../../assets/foto.jpg" routerLinkActive="active" [textoBtn]="'CV'"></app-boton>
 
     </div>
     <!-- <div class="experiencia">

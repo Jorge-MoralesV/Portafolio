@@ -6,12 +6,15 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './pages/components/navbar/navbar.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { SobremiComponent } from './pages/sobremi/sobremi.component';
 import { SuperiorComponent } from './pages/superior/superior.component';
 import { CarruselComponent } from './pages/carrusel/carrusel.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { BotonComponent } from './components/boton/boton.component';
+import { RedesComponent } from './components/redes/redes.component';
 
 
 @NgModule({
@@ -23,6 +26,9 @@ import { CarruselComponent } from './pages/carrusel/carrusel.component';
     SobremiComponent,
     SuperiorComponent,
     CarruselComponent,
+    FooterComponent,
+    BotonComponent,
+    RedesComponent,
   ],
   imports: [
     BrowserModule,
