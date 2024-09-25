@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./carrusel.component.css']
 })
 export class CarruselComponent {
+  // En el archivo .ts del componente principal
+  textoDelBoton: string = 'Ver más';
 
 }

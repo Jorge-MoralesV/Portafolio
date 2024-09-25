@@ -5,8 +5,10 @@
             <input class="form-control nombre" type="text" placeholder="Nombre:">
             <input class="form-control correo" type="email" placeholder="Correo:">
             <textarea class="form-control" name="" id="" placeholder="Mensaje:" rows="3"></textarea>
-            <a target="_parent" class="btn-mas">Enviar</a>
+            <!-- <a target="_parent" class="btn-mas">Enviar</a> -->
+            <app-boton [textoBtn]="'Enviar'"></app-boton>
         </form>
-        <p>Desarrollado por Jorge Morales Viveros - 2023, Derechos reservados</p>
+        <app-redes></app-redes>
+        <p>Desarrollado por Jorge Morales Viveros - 2023</p>
     </div>
 </section>

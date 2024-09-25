@@ -1,10 +1,12 @@
-<section class="container" id="acerca-de">
+<br id="acerca-de">
+<br>
+<br>
+<section class="container">
 
     <div class="botones">
         <a [className]="tools ? 'derecho' : 'izquierdo'" (click)="cambio(false)" id="btn-left">Acerca de</a>
         <a [className]="tools ? 'izquierdo' : 'derecho'" (click)="cambio(true)" id="btn-right">Herramientas</a>
     </div>
-
 
     <div class="contenido" id="contenido">
         <!-- Acerca de -->
@@ -75,11 +77,8 @@
             </div>
         </div>
 
-
-
-
-        <a href="https://drive.google.com/file/d/1Y2H-VQEHojqkB5aFu6_MGVZXv9e5YtJr/view?usp=sharing" target="_blank"
-            class="btn-cv">CV</a>
+        <!-- <a href="https://drive.google.com/file/d/1Y2H-VQEHojqkB5aFu6_MGVZXv9e5YtJr/view?usp=sharing" target="_blank" class="btn-cv">CV</a> -->
+        <app-boton routerLink="../../../assets/foto.jpg" routerLinkActive="active" [textoBtn]="'CV'"></app-boton>
 
     </div>
     <!-- <div class="experiencia">
