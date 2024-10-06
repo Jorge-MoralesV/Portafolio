@@ -15,6 +15,7 @@ import { CarruselComponent } from './pages/carrusel/carrusel.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BotonComponent } from './components/boton/boton.component';
 import { RedesComponent } from './components/redes/redes.component';
+import { Proyectos } from './proyectos.enviroment';
 
 
 @NgModule({
@@ -37,7 +38,7 @@ import { RedesComponent } from './components/redes/redes.component';
     RouterModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [Proyectos],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

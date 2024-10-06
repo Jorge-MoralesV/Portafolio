@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-carrusel',
@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./carrusel.component.css']
 })
 export class CarruselComponent {
-  // En el archivo .ts del componente principal
+
+  @Input() imagenes: string[] = [];
+
   textoDelBoton: string = 'Ver más';
 
 }

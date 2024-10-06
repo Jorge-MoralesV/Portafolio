@@ -1,185 +1,97 @@
-<app-navbar></app-navbar>
 <section class="page d-flex justify-content-center flex-wrap container">
-    <div class="encabezado">
-        <h2 class="title">Proyectos</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio atque quo dicta fuga excepturi deserunt iusto
-            illo eos quibusdam maiores non beatae, sunt, laboriosam recusandae dolores asperiores suscipit natus
-            doloribus.
-            Deleniti veniam labore vel sapiente ullam quia repudiandae quo esse suscipit fugit repellat eum, sint
-            nesciunt vitae incidunt ipsum necessitatibus aliquam distinctio assumenda mollitia minus architecto maiores
-            aliquid. Vero, eveniet?
-            Exercitationem dolorum nobis placeat incidunt rerum quod saepe optio laborum beatae corrupti corporis fugit
-            est earum impedit sint doloremque aliquid eum aspernatur, ipsa numquam commodi? Quo veritatis deleniti
-            pariatur earum.</p>
-    </div>
 
-    <div class="proyectos d-flex justify-content-center flex-wrap">
-        <h2>eScire</h2>
+  <div class="encabezado">
+    <h1 class="title">Proyectos</h1>
+  </div>
 
-        <div class="row">
-            <div class="proyecto col-12">
-                <div class="sec1">
-                    <img src="../../../assets/proyect-cards/es colmex.png" alt="">
-                </div>
-                <div class="sec2 ms-5">
-                    <h4>Titulo del proyecto</h4>
-                    <p>Nombre empresa</p>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, inventore
-                        enim ratione, vel veniam
-                        molestiae quaerat voluptatum cum minus minima, ut nesciunt quae. Sapiente aliquid quae ut ea
-                        veritatis adipisci.
-                        Mollitia commodi nemo veniam eveniet assumenda cumque voluptas perspiciatis pariatur. Nostrum
-                        labore
-                        quam, necessitatibus eius libero perferendis eaque iste exercitationem inventore repellendus
-                        officia
-                        possimus accusamus expedita sapiente animi voluptates cum!</p>
-                    <div class="text-center">
-                        <app-boton [textoBtn]="'Más info'" data-bs-toggle="modal" data-bs-target="#exampleModal" />
-                    </div>
-                </div>
-            </div>
-            <div class="proyecto col-12">
-                <div class="sec2 me-5">
-                    <h4 class="text-end">Titulo del proyecto</h4>
-                    <p class="text-end">Nombre empresa</p>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, inventore
-                        enim ratione, vel veniam
-                        molestiae quaerat voluptatum cum minus minima, ut nesciunt quae. Sapiente aliquid quae ut ea
-                        veritatis adipisci.
-                        Mollitia commodi nemo veniam eveniet assumenda cumque voluptas perspiciatis pariatur. Nostrum
-                        labore
-                        quam, necessitatibus eius libero perferendis eaque iste exercitationem inventore repellendus
-                        officia
-                        possimus accusamus expedita sapiente animi voluptates cum!</p>
-                    <div class="text-center">
-                        <app-boton [textoBtn]="'Más info'" data-bs-toggle="modal" data-bs-target="#exampleModal" />
-                    </div>
-                </div>
-                <div class="sec1">
-                    <img src="../../../assets/proyect-cards/educa.png" alt="">
-                </div>
-            </div>
+  <div class="proyectos d-flex justify-content-center flex-wrap">
+
+    <h2>Desarrollado en eScire</h2>
+    <p>Aquí hay algunos de los proyectos en los que trabaje en eScire.</p>
+
+    <div class="d-flex" *ngFor="let item of escire; let i = index">
+
+      <div class="proyecto col-12">
+        <div class="sec1">
+          <img src={{item.img[0]}} alt="Imagen del proyecto">
         </div>
-
-
-        <!-- <div class="row d-flex justify-content-around">
-            <div class="proyecto col-6 d-flex flex-wrap justify-content-center">
-                <div class="sec1">
-                    <img src="../../../assets/proyect-cards/es colmex.png" alt="">
-                </div>
-                <div class="sec2">
-                    <h4 class="text-center">Titulo del proyecto</h4>
-                    <p class="text-center">Nombre empresa</p>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, inventore
-                        enim ratione, vel veniam
-                        molestiae quaerat voluptatum cum minus minima, ut nesciunt quae. Sapiente aliquid quae ut ea
-                        veritatis adipisci.
-                        Mollitia commodi nemo veniam eveniet assumenda cumque voluptas perspiciatis pariatur. Nostrum
-                        labore
-                        quam, necessitatibus eius libero perferendis eaque iste exercitationem inventore repellendus
-                        officia
-                        possimus accusamus expedita sapiente animi voluptates cum!</p>
-                    <div class="text-center">
-                        <app-boton [textoBtn]="'Más info'" data-bs-toggle="modal" data-bs-target="#exampleModal" />
-                    </div>
-                </div>
-            </div>
-            <div class="proyecto col-6 d-flex flex-wrap justify-content-center">
-                <div class="sec1">
-                    <img src="../../../assets/proyect-cards/es colmex.png" alt="">
-                </div>
-                <div class="sec2">
-                    <h4 class="text-center">Titulo del proyecto</h4>
-                    <p class="text-center">Nombre empresa</p>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, inventore
-                        enim ratione, vel veniam
-                        molestiae quaerat voluptatum cum minus minima, ut nesciunt quae. Sapiente aliquid quae ut ea
-                        veritatis adipisci.
-                        Mollitia commodi nemo veniam eveniet assumenda cumque voluptas perspiciatis pariatur. Nostrum
-                        labore
-                        quam, necessitatibus eius libero perferendis eaque iste exercitationem inventore repellendus
-                        officia
-                        possimus accusamus expedita sapiente animi voluptates cum!</p>
-                    <div class="text-center">
-                        <app-boton [textoBtn]="'Más info'" data-bs-toggle="modal" data-bs-target="#exampleModal" />
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-        <div class="row">
-            <div class="proyecto col-12">
-                <div class="sec1">
-                    <img src="../../../assets/proyect-cards/joinopen.png" alt="">
-                </div>
-                <div class="sec2 ms-5">
-                    <h4>Titulo del proyecto</h4>
-                    <p>Nombre empresa</p>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, inventore
-                        enim ratione, vel veniam
-                        molestiae quaerat voluptatum cum minus minima, ut nesciunt quae. Sapiente aliquid quae ut ea
-                        veritatis adipisci.
-                        Mollitia commodi nemo veniam eveniet assumenda cumque voluptas perspiciatis pariatur. Nostrum
-                        labore
-                        quam, necessitatibus eius libero perferendis eaque iste exercitationem inventore repellendus
-                        officia
-                        possimus accusamus expedita sapiente animi voluptates cum!</p>
-                    <div class="text-center">
-                        <app-boton [textoBtn]="'Más info'" data-bs-toggle="modal" data-bs-target="#exampleModal" />
-                    </div>
-                </div>
-            </div>
-            <div class="proyecto col-12">
-                <div class="sec2 me-5">
-                    <h4 class="text-end">Titulo del proyecto</h4>
-                    <p class="text-end">Nombre empresa</p>
-                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, inventore
-                        enim ratione, vel veniam
-                        molestiae quaerat voluptatum cum minus minima, ut nesciunt quae. Sapiente aliquid quae ut ea
-                        veritatis adipisci.
-                        Mollitia commodi nemo veniam eveniet assumenda cumque voluptas perspiciatis pariatur. Nostrum
-                        labore
-                        quam, necessitatibus eius libero perferendis eaque iste exercitationem inventore repellendus
-                        officia
-                        possimus accusamus expedita sapiente animi voluptates cum!</p>
-                    <div class="text-center">
-                        <app-boton [textoBtn]="'Más info'" data-bs-toggle="modal" data-bs-target="#exampleModal" />
-                    </div>
-                </div>
-                <div class="sec1">
-                    <img src="../../../assets/proyect-cards/pokedex.png" alt="">
-                </div>
-            </div>
+        <div class="sec2">
+          <h4>{{item.nombre}}</h4>
+          <p>{{item.empresa_asosiacion}}</p>
+          <img src={{item.img[0]}} alt="Imagen del proyecto">
+          <p class="text-center">{{item.descripcion}}</p>
+          <div class="text-center">
+            <app-boton (click)="enviarId(i)" [textoBtn]="'Más info'" data-bs-toggle="modal"
+              data-bs-target="#modalProjects" />
+          </div>
         </div>
+      </div>
 
     </div>
+  </div>
+
+  <div class="proyectos d-flex justify-content-center flex-wrap">
+
+    <h2>Desarrollado por mí</h2>
+    <p>Aquí hay algunos de los proyectos desarrollados por mí.</p>
+
+    <div class="d-flex" *ngFor="let item of proyectos; let i = index">
+
+      <div class="proyecto col-12">
+        <div class="sec1">
+          <img src={{item.img[0]}} alt="Imagen del proyecto">
+        </div>
+        <div class="sec2">
+          <h4>{{item.nombre}}</h4>
+          <p>{{item.empresa_asosiacion}}</p>
+          <img src={{item.img[0]}} alt="Imagen del proyecto">
+          <p class="text-center">{{item.descripcion}}</p>
+          <div class="text-center">
+            <app-boton (click)="enviarId(i)" [textoBtn]="'Más info'" data-bs-toggle="modal"
+              data-bs-target="#modalProjectsMe" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </section>
-<app-footer />
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">eScire</h1>
-                <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <app-carrusel />
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit harum ipsa atque iure
-                    nesciunt dicta, sunt sed deserunt rem tempora. Delectus doloremque perspiciatis accusantium
-                    provident excepturi, quisquam deserunt voluptate culpa.
-                    Dolores tenetur nobis dolorum enim at sequi rem hic nam quas nesciunt, deserunt officiis similique.
-                    Enim, totam quia nesciunt facilis dignissimos illum eius consectetur ullam, accusamus, impedit
-                    laudantium sit veniam.
-                    Iusto ad vitae odio quasi fugiat earum esse soluta, distinctio, quos quas dolorem totam commodi quam
-                    suscipit quod eaque unde repellat placeat quibusdam consequuntur eligendi assumenda officia!
-                    Quisquam, libero rem?</p>
-            </div>
-            <div class="modal-footer">
-                <app-boton [textoBtn]="'Visitar'"
-                    (click)="abrirEnlace('https://estudiossociologicos.colmex.mx/index.php/es')" />
-            </div>
-        </div>
+<!-- Modal eScire-->
+<div class="modal fade" id="modalProjects" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">{{escire[index]?.nombre}}</h1>
+        <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <app-carrusel [imagenes]="escire[index]?.img" />
+        <p>{{escire[index]?.descripcion}}</p>
+      </div>
+      <div class="modal-footer">
+        <app-boton [textoBtn]="'Visitar'" (click)="abrirEnlace(escire[index]?.enlace)" />
+      </div>
     </div>
+  </div>
+</div>
+
+<!-- Modal proyectos -->
+<div class="modal fade" id="modalProjectsMe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">{{proyectos[index]?.nombre}}</h1>
+        <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <app-carrusel [imagenes]="proyectos[index]?.img" />
+        <p>{{proyectos[index]?.descripcion}}</p>
+      </div>
+      <div class="modal-footer">
+        <app-boton [textoBtn]="'Visitar'" (click)="abrirEnlace(proyectos[index]?.enlace)" />
+      </div>
+    </div>
+  </div>
 </div>

@@ -3,99 +3,146 @@
 <br>
 <section class="container">
 
-    <div class="botones">
-        <a [className]="tools ? 'derecho' : 'izquierdo'" (click)="cambio(false)" id="btn-left">Acerca de</a>
-        <a [className]="tools ? 'izquierdo' : 'derecho'" (click)="cambio(true)" id="btn-right">Herramientas</a>
-    </div>
+  <div class="botones">
+    <a [className]="tools ? 'derecho' : 'izquierdo'" (click)="cambio(false)" id="btn-left">Acerca de</a>
+    <a [className]="tools ? 'izquierdo' : 'derecho'" (click)="cambio(true)" id="btn-right">Herramientas</a>
+  </div>
 
-    <div class="contenido" id="contenido">
-        <!-- Acerca de -->
-        <div class="acerca-de" *ngIf="tools === false">
-            <p class="descripcion">{{description}}</p>
-            <div class="tarjetas">
-                <div class="tarjeta back">
-                    <img src="../../../assets/Acerca/Back.svg" alt="">
-                    <h3>BackEnd</h3>
-                    <p>{{back}}</p>
-                </div>
-                <div class="tarjeta diseñar">
-                    <img src="../../../assets/Acerca/Diseñar.svg" alt="">
-                    <h3>Diseñar</h3>
-                    <p>{{back}}</p>
-                </div>
-                <div class="tarjeta front">
-                    <img src="../../../assets/Acerca/Front.svg" alt="">
-                    <h3>FrontEnd</h3>
-                    <p>{{back}}</p>
-                </div>
-            </div>
-        </div>
+  <div class="contenido" id="contenido">
+    <!-- Acerca de -->
+    <div class="acerca-de" *ngIf="tools === false">
+      <!-- <p class="descripcion">{{description}}</p> -->
+      <p class="descripcion">Egresado de la carrera de ingeniería de
+        sistemas computacionales, apasionado por el desarrollo de aplicaciones y el mantenimiento y soporte de hardware.
+        <br>
+        Con sólidos conocimientos en programación, diseño de sistemas y resolución de problemas técnicos. Comprometido
+        con la
+        innovación y la mejora continua en el ámbito tecnológico.
+      </p>
 
-        <!-- Herramientas -->
-        <div class="herramientas" id="herramientas" *ngIf="tools === true">
-            <h2 class="lenguajes">Lenguajes y Tecnologias</h2>
-            <div class="brands">
-                <div class="brand">
-                    <img src="../../../assets/iconos-herramientas/java.svg" alt="Java">
-                </div>
-                <div class="brand">
-                    <img src="../../../assets/iconos-herramientas/javascript.svg" alt="Java">
-                </div>
-                <div class="brand">
-                    <img src="../../../assets/iconos-herramientas/typescript.svg" alt="Java">
-                </div>
-                <div class="brand">
-                    <img src="../../../assets/iconos-herramientas/Php/Php.svg" alt="Java">
-                </div>
-                <div class="brand">
-                    <img src="../../../assets/iconos-herramientas/html5.svg" alt="Java">
-                </div>
-                <div class="brand">
-                    <img src="../../../assets/iconos-herramientas/css.svg" alt="Java">
-                </div>
-            </div>
-            <h2 class="software">Herramientas y Software</h2>
-            <div class="brands">
-                <div class="brand">
-                    <img src="../../../assets/iconos-herramientas/adobe-xd.svg" alt="Java">
-                </div>
-                <div class="brand">
-                    <img src="../../../assets/iconos-herramientas/angular.svg" alt="Java">
-                </div>
-                <div class="brand">
-                    <img src="../../../assets/iconos-herramientas/bootstrap.svg" alt="Java">
-                </div>
-                <div class="brand">
-                    <img src="../../../assets/iconos-herramientas/canva.svg" alt="Java">
-                </div>
-                <div class="brand">
-                    <img src="../../../assets/iconos-herramientas/mysql.svg" alt="Java">
-                </div>
-                <div class="brand">
-                    <img src="../../../assets/iconos-herramientas/tailwindcss.svg" alt="Java">
-                </div>
-            </div>
-        </div>
-
-        <!-- <a href="https://drive.google.com/file/d/1Y2H-VQEHojqkB5aFu6_MGVZXv9e5YtJr/view?usp=sharing" target="_blank" class="btn-cv">CV</a> -->
-        <app-boton routerLink="../../../assets/foto.jpg" routerLinkActive="active" [textoBtn]="'CV'"></app-boton>
-
-    </div>
-    <!-- <div class="experiencia">
+      <div class="experiencia">
+        <p>Experiencia</p>
         <div class="exp-web">
-            <img src="../../../assets/experiencia/escire.jpg" alt="eScire">
-            <div class="contenido">
-                <h2>Desarrollador Web PKP</h2>
-                <p>Septiembre 2022 - Mayo 2023</p>
-            </div>
+          <img src="../../../assets/experiencia/escire.jpg" alt="eScire" width="100">
+          <div class="contenido">
+            <h2>Desarrollador Web FullStack</h2>
+            <p>Septiembre 2022 - Mayo 2023</p>
+          </div>
         </div>
         <div class="exp-tec">
-            <img src="../../../assets/experiencia/itsm.png" alt="ITSM">
-            <div class="contenido">
-                <h2>Ing. Sistemas Computacionales</h2>
-                <p>2017 - 2023</p>
-            </div>
+          <img src="../../../assets/experiencia/itsm.png" alt="ITSM" width="100">
+          <div class="contenido">
+            <h2>Ing. Sistemas Computacionales</h2>
+            <p>2017 - 2023</p>
+          </div>
         </div>
-    </div> -->
+      </div>
+      <!--       <div class="tarjetas">
+        <div class="tarjeta back">
+          <img src="../../../assets/Acerca/Back.svg" alt="">
+          <h3>BackEnd</h3>
+          <p>{{back}}</p>
+        </div>
+        <div class="tarjeta diseñar">
+          <img src="../../../assets/Acerca/Diseñar.svg" alt="">
+          <h3>Diseñar</h3>
+          <p>{{back}}</p>
+        </div>
+        <div class="tarjeta front">
+          <img src="../../../assets/Acerca/Front.svg" alt="">
+          <h3>FrontEnd</h3>
+          <p>{{back}}</p>
+        </div>
+      </div> -->
+    </div>
+
+    <!-- Herramientas -->
+    <div class="herramientas" id="herramientas" *ngIf="tools === true">
+      <p class="descripcion">Aquí algunos de los lenguajes y tecnologías que he llegado a usar en mis proyectos.</p>
+      <h2 class="lenguajes">Lenguajes y Tecnologias</h2>
+      <div class="brands">
+        <div>
+          <div class="brand">
+            <img src="assets/iconos-herramientas/java.svg" alt="Java">
+          </div>
+          <p>Java</p>
+        </div>
+        <div>
+          <div class="brand">
+            <img src="assets/iconos-herramientas/javascript.svg" alt="JavaScript">
+          </div>
+          <p>JavaScript</p>
+        </div>
+        <div>
+          <div class="brand">
+            <img src="assets/iconos-herramientas/typescript.svg" alt="typescript">
+          </div>
+          <p>Typescript</p>
+        </div>
+        <div>
+          <div class="brand">
+            <img src="assets/iconos-herramientas/Php/Php.svg" alt="Php">
+          </div>
+          <p>Php</p>
+        </div>
+        <div>
+          <div class="brand">
+            <img src="assets/iconos-herramientas/html5.svg" alt="html5">
+          </div>
+          <p>Html</p>
+        </div>
+        <div>
+          <div class="brand">
+            <img src="assets/iconos-herramientas/css.svg" alt="css">
+          </div>
+          <p>CSS</p>
+        </div>
+      </div>
+      <h2 class="software">Herramientas y Software</h2>
+      <div class="brands">
+        <div>
+          <div class="brand">
+            <img src="assets/iconos-herramientas/adobe-xd.svg" alt="adobexd">
+          </div>
+          <p>Adobe XD</p>
+        </div>
+        <div>
+          <div class="brand">
+            <img src="assets/iconos-herramientas/angular.svg" alt="angular">
+          </div>
+          <p>Angular</p>
+        </div>
+        <div>
+          <div class="brand">
+            <img src="assets/iconos-herramientas/bootstrap.svg" alt="bootstrap">
+          </div>
+          <p>Bootstrap</p>
+        </div>
+        <div>
+          <div class="brand">
+            <img src="assets/iconos-herramientas/canva.svg" alt="canva">
+          </div>
+          <p>Canva</p>
+        </div>
+        <div>
+          <div class="brand">
+            <img src="assets/iconos-herramientas/mysql.svg" alt="mysql">
+          </div>
+          <p>MySql</p>
+        </div>
+        <div>
+          <div class="brand">
+            <img src="assets/iconos-herramientas/tailwindcss.svg" alt="tailwindcss">
+          </div>
+          <p>TailwindCSS</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <a href="https://drive.google.com/file/d/1Y2H-VQEHojqkB5aFu6_MGVZXv9e5YtJr/view?usp=sharing" target="_blank" class="btn-cv">CV</a> -->
+    <app-boton routerLink="../../../assets/foto.jpg" routerLinkActive="active" [textoBtn]="'CV'"></app-boton>
+
+  </div>
+
 
 </section>

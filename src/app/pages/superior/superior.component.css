@@ -1,33 +1,80 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .container {
-    height: 100vh;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .contenedor-nombre {
-    width: 50%;
-    text-align: center;
+  width: 50%;
+  text-align: center;
 }
 
 .contenedor-nombre h1 {
-    font-size: 100px;
-    color: #fff;
+  font-size: 100px;
+  /* font-size: clamp(1rem, 2vw + 1rem, 3rem); */
+  color: #fff;
 }
 
 .contenedor-nombre p {
-    font-size: 30px;
-    color: #fff;
+  font-size: 30px;
+  color: #fff;
 }
 
 .foto {
-    width: 50%;
+  width: 50%;
 }
 
 .foto img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .contenedor-nombre {
     width: 100%;
+  }
+
+  .foto {
+    width: 100%;
+    text-align: center;
+  }
+
+  .foto img {
+    width: 80%;
+  }
+
+  .contenedor-nombre h1 {
+    font-size: 60px;
+  }
+
+  .contenedor-nombre p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .contenedor-nombre h1 {
+    font-size: clamp(4rem, 2vw + 1rem, 5rem);
+  }
+
+  .contenedor-nombre p {
+    font-size: clamp(1rem, 2vw + 1rem, 3rem);
+    margin: auto;
+    width: 60%;
+  }
+
 }

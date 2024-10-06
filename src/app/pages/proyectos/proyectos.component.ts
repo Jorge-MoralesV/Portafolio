@@ -1,15 +1,30 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Proyectos } from 'src/app/proyectos.enviroment';
 
 @Component({
   selector: 'app-proyectos',
   templateUrl: './proyectos.component.html',
   styleUrls: ['./proyectos.component.css']
 })
-export class ProyectosComponent {
+export class ProyectosComponent implements OnInit {
 
-abrirEnlace(url:string) {
-/* const url = "https://estudiossociologicos.colmex.mx/index.php/es"; */
-window.open(url, '_blank');
-}
+  escire: any[] = [];
+  proyectos: any[] = [];
+  index: number;
+
+  constructor(private _proyectos: Proyectos, private _proyectosEscire: Proyectos) { }
+
+  ngOnInit(): void {
+    this.escire = this._proyectosEscire.getItemsEscire();
+    this.proyectos = this._proyectos.getItems();
+  }
+
+  abrirEnlace(url: string) {
+    window.open(url, '_blank');
+  }
+
+  enviarId(i: number) {
+    this.index = i;
+  }
 
 }
