@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 export class InicioComponent {
 
   textoDelBoton: string = 'Ver más';
-  imagenes = ['../assets/proyect-cards/escolmex/es colmex.png', '../assets/proyect-cards/opendots/joinopen.png', '../assets/proyect-cards/pokeapi/pokedex1.png'];
+  /* imagenes = ['../assets/proyect-cards/escolmex/es colmex.png', '../assets/proyect-cards/opendots/joinopen.png', '../assets/proyect-cards/pokeapi/pokedex1.png']; */
 
 }

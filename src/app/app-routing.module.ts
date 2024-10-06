@@ -7,11 +7,11 @@ const routes: Routes = [
   {
     path: '',
     component: InicioComponent,
-  },
+  }/* ,
   {
     path: 'proyectos',
     component: ProyectosComponent,
-  },
+  }, */
 
 ];
 
