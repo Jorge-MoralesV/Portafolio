@@ -22,7 +22,15 @@ import { Component } from '@angular/core';
 
 export class SobremiComponent {
 
-  tools= false;
+  tools = false;
+
+  lenguajes = [
+    'java', 'javascript', 'typescript', 'php', 'html', 'css', 'tailwindcss', 'bootstrap', 'jquery', 'sass'
+  ]
+
+  herramientas = [
+    'adobe-xd', 'angular', 'canva', 'figma', 'laravel', 'mysql', 'ojs', 'sqlite', 'sql-server'
+  ]
 
   constructor() {
 

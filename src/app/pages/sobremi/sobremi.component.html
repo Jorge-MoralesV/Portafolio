@@ -11,7 +11,6 @@
   <div class="contenido" id="contenido">
     <!-- Acerca de -->
     <div class="acerca-de" *ngIf="tools === false">
-      <!-- <p class="descripcion">{{description}}</p> -->
       <p class="descripcion">Egresado de la carrera de ingeniería de
         sistemas computacionales, apasionado por el desarrollo de aplicaciones y el mantenimiento y soporte de hardware.
         <br>
@@ -60,81 +59,21 @@
     <div class="herramientas" id="herramientas" *ngIf="tools === true">
       <p class="descripcion">Aquí algunos de los lenguajes y tecnologías que he llegado a usar en mis proyectos.</p>
       <h2 class="lenguajes">Lenguajes y Tecnologias</h2>
-      <div class="brands">
+      <div class="brands" *ngFor="let lenguaje of lenguajes">
         <div>
           <div class="brand">
-            <img src="assets/iconos-herramientas/java.svg" alt="Java">
+            <img [src]="'assets/iconos-herramientas/'+lenguaje+'.svg'" alt={{lenguaje}}>
           </div>
-          <p>Java</p>
-        </div>
-        <div>
-          <div class="brand">
-            <img src="assets/iconos-herramientas/javascript.svg" alt="JavaScript">
-          </div>
-          <p>JavaScript</p>
-        </div>
-        <div>
-          <div class="brand">
-            <img src="assets/iconos-herramientas/typescript.svg" alt="typescript">
-          </div>
-          <p>Typescript</p>
-        </div>
-        <div>
-          <div class="brand">
-            <img src="assets/iconos-herramientas/php.svg" alt="Php">
-          </div>
-          <p>Php</p>
-        </div>
-        <div>
-          <div class="brand">
-            <img src="assets/iconos-herramientas/html.svg" alt="html5">
-          </div>
-          <p>Html</p>
-        </div>
-        <div>
-          <div class="brand">
-            <img src="assets/iconos-herramientas/css.svg" alt="css">
-          </div>
-          <p>CSS</p>
+          <p>{{lenguaje}}</p>
         </div>
       </div>
       <h2 class="software">Herramientas y Software</h2>
-      <div class="brands">
+      <div class="brands" *ngFor="let herramienta of herramientas">
         <div>
           <div class="brand">
-            <img src="assets/iconos-herramientas/adobe-xd.svg" alt="adobexd">
+            <img [src]="'assets/iconos-herramientas/'+herramienta+'.svg'" alt={{herramienta}}>
           </div>
-          <p>Adobe XD</p>
-        </div>
-        <div>
-          <div class="brand">
-            <img src="assets/iconos-herramientas/angular.svg" alt="angular">
-          </div>
-          <p>Angular</p>
-        </div>
-        <div>
-          <div class="brand">
-            <img src="assets/iconos-herramientas/bootstrap.svg" alt="bootstrap">
-          </div>
-          <p>Bootstrap</p>
-        </div>
-        <div>
-          <div class="brand">
-            <img src="assets/iconos-herramientas/canva.svg" alt="canva">
-          </div>
-          <p>Canva</p>
-        </div>
-        <div>
-          <div class="brand">
-            <img src="assets/iconos-herramientas/mysql.svg" alt="mysql">
-          </div>
-          <p>MySql</p>
-        </div>
-        <div>
-          <div class="brand">
-            <img src="assets/iconos-herramientas/tailwindcss.svg" alt="tailwindcss">
-          </div>
-          <p>TailwindCSS</p>
+          <p>{{herramienta}}</p>
         </div>
       </div>
     </div>
