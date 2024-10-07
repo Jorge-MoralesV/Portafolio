@@ -11,6 +11,7 @@ export class ProyectosComponent implements OnInit {
   escire: any[] = [];
   proyectos: any[] = [];
   index: number;
+  proyectoActual: any;
 
   constructor(private _proyectos: Proyectos, private _proyectosEscire: Proyectos) { }
 
@@ -23,8 +24,14 @@ export class ProyectosComponent implements OnInit {
     window.open(url, '_blank');
   }
 
-  enviarId(i: number) {
+  abrirModal(tipo: string, i: number) {
     this.index = i;
+    if (tipo === 'escire') {
+      this.proyectoActual = this.escire[this.index];
+    } else {
+      this.proyectoActual = this.proyectos[this.index];
+    }
   }
+
 
 }

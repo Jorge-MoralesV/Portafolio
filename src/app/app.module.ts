@@ -13,9 +13,9 @@ import { SobremiComponent } from './pages/sobremi/sobremi.component';
 import { SuperiorComponent } from './pages/superior/superior.component';
 import { CarruselComponent } from './pages/carrusel/carrusel.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { BotonComponent } from './components/boton/boton.component';
 import { RedesComponent } from './components/redes/redes.component';
 import { Proyectos } from './proyectos.enviroment';
+import { BotonComponent } from './components/boton/boton.component';
 
 
 @NgModule({
@@ -28,8 +28,8 @@ import { Proyectos } from './proyectos.enviroment';
     SuperiorComponent,
     CarruselComponent,
     FooterComponent,
-    BotonComponent,
     RedesComponent,
+    BotonComponent
   ],
   imports: [
     BrowserModule,

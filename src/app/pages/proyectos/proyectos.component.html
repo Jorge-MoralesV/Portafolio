@@ -11,87 +11,83 @@
     <p>Aquí hay algunos de los proyectos en los que trabaje en eScire.</p>
 
     <div class="d-flex" *ngFor="let item of escire; let i = index">
-
       <div class="proyecto col-12">
-        <div class="sec1">
-          <img src={{item.img[0]}} alt="Imagen del proyecto">
+
+        <div [ngClass]="i%2==0 ? 'sec1' : 'sec1 order-1'">
+          <img class="imagen-proyecto" src={{item.img[0]}} alt="Imagen del proyecto">
         </div>
-        <div class="sec2">
+
+        <div [ngClass]="i%2==0 ? 'sec2' : 'sec2 order-0'">
           <h4>{{item.nombre}}</h4>
-          <p>{{item.empresa_asosiacion}}</p>
-          <img src={{item.img[0]}} alt="Imagen del proyecto">
-          <p class="text-center">{{item.descripcion}}</p>
+          <p class="nombre-empresa">{{item.empresa_asosiacion}}</p>
+          <img class="imagen-proyecto" src={{item.img[0]}} alt="Imagen del proyecto">
+          <p class="text-center descripcion">{{item.descripcion_corta}}</p>
+          <div class="brands"  *ngFor="let brand of item.herramientas">
+            <div class="brand">
+              <img [src]="'assets/iconos-herramientas/' + brand + '.svg'" alt="" width="20" height="20">
+            </div>
+            <p class="nombre-brand">{{brand}}</p>
+          </div>
           <div class="text-center">
-            <app-boton (click)="enviarId(i)" [textoBtn]="'Más info'" data-bs-toggle="modal"
+            <app-boton (click)="abrirModal('escire', i)" [textoBtn]="'Detalles'" data-bs-toggle="modal"
               data-bs-target="#modalProjects" />
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
 
   <div class="proyectos d-flex justify-content-center flex-wrap">
 
     <h2>Desarrollado por mí</h2>
-    <p>Aquí hay algunos de los proyectos desarrollados por mí.</p>
+    <p>Aquí hay algunos de los proyectos que he realizado.</p>
 
     <div class="d-flex" *ngFor="let item of proyectos; let i = index">
 
       <div class="proyecto col-12">
-        <div class="sec1">
-          <img src={{item.img[0]}} alt="Imagen del proyecto">
+
+        <div [ngClass]="i%2==0 ? 'sec1' : 'sec1 order-1'">
+          <img class="imagen-proyecto" src={{item.img[0]}} alt="Imagen del proyecto">
         </div>
-        <div class="sec2">
+
+        <div [ngClass]="i%2==0 ? 'sec2' : 'sec2 order-0'">
           <h4>{{item.nombre}}</h4>
-          <p>{{item.empresa_asosiacion}}</p>
-          <img src={{item.img[0]}} alt="Imagen del proyecto">
-          <p class="text-center">{{item.descripcion}}</p>
+          <p class="nombre-empresa">{{item.empresa_asosiacion}}</p>
+          <img class="imagen-proyecto" src={{item.img[0]}} alt="Imagen del proyecto">
+          <p class="text-center descripcion">{{item.descripcion_corta}}</p>
+          <div class="brands" *ngFor="let brand of item.herramientas">
+            <div class="brand">
+              <img [src]="'assets/iconos-herramientas/' + brand + '.svg'" alt="" width="20" height="20">
+            </div>
+            <p class="nombre-brand">{{brand}}</p>
+          </div>
           <div class="text-center">
-            <app-boton (click)="enviarId(i)" [textoBtn]="'Más info'" data-bs-toggle="modal"
-              data-bs-target="#modalProjectsMe" />
+            <app-boton (click)="abrirModal('proyectos', i)" [textoBtn]="'Detalles'" data-bs-toggle="modal"
+              data-bs-target="#modalProjects" />
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
 
 </section>
 
-<!-- Modal eScire-->
+<!-- Modal-->
 <div class="modal fade" id="modalProjects" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">{{escire[index]?.nombre}}</h1>
+        <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">{{proyectoActual?.nombre}}</h1>
         <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <app-carrusel [imagenes]="escire[index]?.img" />
-        <p>{{escire[index]?.descripcion}}</p>
+        <app-carrusel [imagenes]="proyectoActual?.img" />
+        <p>{{proyectoActual?.descripcion}}</p>
       </div>
       <div class="modal-footer">
-        <app-boton [textoBtn]="'Visitar'" (click)="abrirEnlace(escire[index]?.enlace)" />
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal proyectos -->
-<div class="modal fade" id="modalProjectsMe" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5 text-white" id="exampleModalLabel">{{proyectos[index]?.nombre}}</h1>
-        <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <app-carrusel [imagenes]="proyectos[index]?.img" />
-        <p>{{proyectos[index]?.descripcion}}</p>
-      </div>
-      <div class="modal-footer">
-        <app-boton [textoBtn]="'Visitar'" (click)="abrirEnlace(proyectos[index]?.enlace)" />
+        <app-boton [textoBtn]="'Visitar'" (click)="abrirEnlace(proyectoActual?.enlace)" />
       </div>
     </div>
   </div>
