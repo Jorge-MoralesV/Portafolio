@@ -5,19 +5,6 @@ import { Component } from '@angular/core';
   selector: 'app-sobremi',
   templateUrl: './sobremi.component.html',
   styleUrls: ['./sobremi.component.css'],
-  /* animations: [
-    trigger('enterState', [
-      state('void', style({
-        opacity: 0
-      })),
-      transition(':enter', [
-        animate(600, style({
-          transition: 'opacity ease-in',
-          opacity: 1
-        }))
-      ])
-    ]),
-  ] */
 })
 
 export class SobremiComponent {
@@ -25,11 +12,11 @@ export class SobremiComponent {
   tools = false;
 
   lenguajes = [
-    'java', 'javascript', 'typescript', 'php', 'html', 'css', 'tailwindcss', 'bootstrap', 'jquery', 'sass'
+    'Java', 'JavaScript', 'TypeScript', 'Php', 'HTML', 'CSS', 'TailwindCSS', 'Bootstrap', 'JQuery', 'SASS'
   ]
 
   herramientas = [
-    'adobe-xd', 'angular', 'canva', 'figma', 'laravel', 'mysql', 'ojs', 'sqlite', 'sql-server'
+    'AdobeXD', 'Angular', 'Canva', 'Figma', 'Laravel', 'MySQL', 'OJS', 'SQLite', 'SQLServer', 'React', 'Firebase'
   ]
 
   constructor() {

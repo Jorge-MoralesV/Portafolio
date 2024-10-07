@@ -91,6 +91,10 @@
           </div>
           <p class="nombre-brand">{{brand}}</p>
         </div>
+        <div [ngClass]="proyectoActual?.img_extra > 0 ? 'd-none' : 'd-block'">
+          <p></p>
+          <img src={{proyectoActual?.img_extra}} alt="" width="500">
+        </div>
       </div>
       <div class="modal-footer">
         <app-boton [textoBtn]="'Visitar'" (click)="abrirEnlace(proyectoActual?.enlace)" />
