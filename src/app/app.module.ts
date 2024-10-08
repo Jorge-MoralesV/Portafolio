@@ -1,3 +1,4 @@
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
@@ -29,7 +30,8 @@ import { CarruselComponent } from './components/carrusel/carrusel.component';
     FooterComponent,
     RedesComponent,
     BotonComponent,
-    CarruselComponent
+    CarruselComponent,
+    ExperienciaComponent
   ],
   imports: [
     BrowserModule,

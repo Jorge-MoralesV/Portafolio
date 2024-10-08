@@ -1,0 +1,97 @@
+.card-1,
+.card-2 {
+  max-width: 610px;
+  margin: auto;
+}
+
+.img-experiencia-1,
+.img-experiencia-2 {
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 220px;
+  height: 115px;
+  padding: 50px;
+  transform: translateY(50px);
+  display: grid;
+  align-content: center;
+}
+
+.descripcion-1,
+.img-experiencia-2 {
+  margin-left: auto;
+}
+
+.descripcion-2,
+.img-experiencia-1 {
+  margin-right: auto;
+}
+
+.img-experiencia-1 img,
+.img-experiencia-2 img {
+  width: 100%;
+}
+
+.descripcion-1,
+.descripcion-2 {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  max-width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.descripcion-1 hr {
+  color: #c5261c;
+}
+
+.descripcion-2 hr {
+  color: #005ca1;
+}
+
+.descripcion-1 h2,
+.descripcion-2 h2 {
+  margin-bottom: 5px;
+}
+
+.descripcion-1 p,
+.descripcion-2 p {
+  color: #ACACAC;
+  margin-top: 5px;
+}
+
+h2,
+hr,
+p {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 800px) {
+
+  .img-experiencia-1,
+  .img-experiencia-2 {
+    margin: auto;
+  }
+
+  .descripcion-1 h2,
+  .descripcion-2 h2 {
+    margin-top: 30px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .img-experiencia-1,
+  .img-experiencia-2 {
+    max-width: 200px;
+    height: 100px;
+  }
+
+}
