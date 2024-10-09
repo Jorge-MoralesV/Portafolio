@@ -1,8 +1,0 @@
-[build]
-  publish = "dist/portafolio"
-  command = "npm run build"
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Robots-Tag = "index, follow"

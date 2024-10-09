@@ -6,25 +6,25 @@ import { Component } from '@angular/core';
   templateUrl: './superior.component.html',
   styleUrls: ['./superior.component.css'],
   animations: [
-    trigger('enterState', [
-      state('void', style({
-        opacity: 0
-      })),
-      transition(':enter', [
-        animate(700, style({
-          transition: 'opacity ease-in',
-          opacity: 1
-        }))
-      ])
-    ]),
     trigger('enterTitle', [
       state('void', style({
         transform: 'translateX(-50px)',
         opacity: 0
       })),
       transition(':enter', [
-        animate(600, style({
+        animate(700, style({
           transform: 'translateX(0)',
+          transition: 'opacity ease-in',
+          opacity: 1
+        }))
+      ])
+    ]),
+    trigger('enterImg', [
+      state('void', style({
+        opacity: 0
+      })),
+      transition(':enter', [
+        animate(800, style({
           transition: 'opacity ease-in',
           opacity: 1
         }))
