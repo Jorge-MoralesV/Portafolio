@@ -9,6 +9,4 @@ export class CarruselComponent {
 
   @Input() imagenes: string[] = [];
 
-  textoDelBoton: string = 'Ver más';
-
 }

@@ -24,13 +24,14 @@
   outline: none;
 }
 
-.container .botones a {
+.container .botones button {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
   width: 50%;
   font-size: larger;
+  border: none;
 }
 
 .container .botones .izquierdo {

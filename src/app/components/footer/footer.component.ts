@@ -33,33 +33,32 @@ export class FooterComponent {
       };
 
       emailjs.send('service_jlxxw3v', 'template_7chbdkj', formData, 'U9_gq195Luqca0cWT')
-        .then((result: EmailJSResponseStatus) => {
+        .then(() => {
 
           this.mensaje = 'Mensaje enviado';
           this.success = true;
           this.showMessage = true;
           this.contactForm.reset();
-          setTimeout(() => {
-            this.showMessage = false
-          }, 3000);
-
+          this.timeOut();
         }, (error) => {
 
           this.mensaje = 'Error al enviar el mensaje: ' + error.text;
           this.success = false;
           this.showMessage = true;
-          setTimeout(() => {
-            this.showMessage = false
-          }, 3000);
+          this.timeOut();
         });
     } else {
 
       this.mensaje = 'Mensaje no enviado.';
       this.success = false;
       this.showMessage = true;
-      setTimeout(() => {
-        this.showMessage = false
-      }, 3000);
+      this.timeOut();
     }
+  }
+
+  timeOut() {
+    setTimeout(() => {
+      this.showMessage = false
+    }, 3000);
   }
 }

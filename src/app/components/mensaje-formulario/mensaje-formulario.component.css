@@ -25,11 +25,3 @@
   margin-left: 15px;
   color: #fff;
 }
-
-@media screen and (max-width: 600px) {
-/*
-  .contenedor-mensaje-success,
-  .contenedor-mensaje-error {
-    margin: auto;
-  } */
-}

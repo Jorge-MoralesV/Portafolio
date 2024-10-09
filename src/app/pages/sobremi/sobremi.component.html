@@ -4,8 +4,8 @@
 <section class="container">
 
   <div class="botones">
-    <a [className]="tools ? 'derecho' : 'izquierdo'" (click)="cambio(false)" id="btn-left">Acerca de</a>
-    <a [className]="tools ? 'izquierdo' : 'derecho'" (click)="cambio(true)" id="btn-right">Herramientas</a>
+    <button [className]="tools ? 'derecho' : 'izquierdo'" (click)="cambio(false)" id="btn-left">Acerca de</button>
+    <button [className]="tools ? 'izquierdo' : 'derecho'" (click)="cambio(true)" id="btn-right">Herramientas</button>
   </div>
 
   <div class="contenido" id="contenido">
@@ -18,41 +18,9 @@
         con la
         innovación y la mejora continua en el ámbito tecnológico.
       </p>
+
       <app-experiencia></app-experiencia>
-      <!-- <div class="experiencia">
-        <p>Experiencia</p>
-        <div class="exp-web">
-          <img src="assets/experiencia/escire.jpg" alt="eScire" width="100">
-          <div class="contenido">
-            <h2>Desarrollador Web FullStack</h2>
-            <p>Septiembre 2022 - Mayo 2023</p>
-          </div>
-        </div>
-        <div class="exp-tec">
-          <img src="assets/experiencia/itsm.png" alt="ITSM" width="100">
-          <div class="contenido">
-            <h2>Ing. Sistemas Computacionales</h2>
-            <p>2017 - 2023</p>
-          </div>
-        </div>
-      </div> -->
-      <!--       <div class="tarjetas">
-        <div class="tarjeta back">
-          <img src="../../../assets/Acerca/Back.svg" alt="">
-          <h3>BackEnd</h3>
-          <p>{{back}}</p>
-        </div>
-        <div class="tarjeta diseñar">
-          <img src="../../../assets/Acerca/Diseñar.svg" alt="">
-          <h3>Diseñar</h3>
-          <p>{{back}}</p>
-        </div>
-        <div class="tarjeta front">
-          <img src="../../../assets/Acerca/Front.svg" alt="">
-          <h3>FrontEnd</h3>
-          <p>{{back}}</p>
-        </div>
-      </div> -->
+
     </div>
 
     <!-- Herramientas -->
@@ -78,9 +46,8 @@
       </div>
     </div>
 
-    <app-boton routerLink="assets/foto.jpg" routerLinkActive="active" [textoBtn]="'CV'"></app-boton>
+    <app-boton (click)="goCv()" [textoBtn]="'CV'"></app-boton>
 
   </div>
-
 
 </section>

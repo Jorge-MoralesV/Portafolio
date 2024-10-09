@@ -1,4 +1,3 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
 
 @Component({
@@ -19,9 +18,7 @@ export class SobremiComponent {
     'AdobeXD', 'Angular', 'Canva', 'Figma', 'Laravel', 'MySQL', 'OJS', 'SQLite', 'SQLServer', 'React', 'Firebase'
   ]
 
-  constructor() {
-
-  }
+  constructor() { }
 
   ngOnInit() {
     this.tools = false;
@@ -33,13 +30,13 @@ export class SobremiComponent {
   avance de los proyectos aportando mis ideas en momentos oportunos o decisivos.
   Apasionado por el desarrollo de aplicaciones y el mantenimiento y soporte de hardware. Egresado con sólidos conocimientos en programación, diseño de sistemas y resolución de problemas técnicos. Comprometido con la innovación y la mejora continua en el ámbito tecnológico.`;
 
-  public back: String = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore beatae neque, fugiat cupiditate
-  dolorem repellat eos at doloribus et placeat. Architecto rerum autem reiciendis reprehenderit iure
-  provident numquam odit facere!`;
-
   cambio(change: boolean) {
     this.tools = change;
     return this.tools;
+  }
+
+  goCv() {
+    window.open('https://drive.google.com/file/d/1NNMMTDnngxNzKtz5jLOhD5xTb63Bk5GI/view?usp=sharing', '_blank');
   }
 
 }
