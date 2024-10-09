@@ -1,12 +1,19 @@
 <footer class="contact" id="contact">
   <div class="container">
     <h2>Contactame</h2>
-    <form action="" class="d-flex justify-content-between flex-wrap">
-      <input class="form-control nombre" type="text" placeholder="Nombre:">
-      <input class="form-control correo" type="email" placeholder="Correo:">
-      <textarea class="form-control" name="" id="" placeholder="Mensaje:" rows="3"></textarea>
+    <form [formGroup]="contactForm" id="contact-form" class="d-flex justify-content-between flex-wrap"
+      (ngSubmit)="onSubmit()">
+      <input formControlName="from_name" class="form-control nombre" type="text" name="from_name" id="from_name"
+        placeholder="Nombre:" required>
+      <input formControlName="reply_to" class="form-control correo" type="email" name="reply_to" id="reply_to"
+        placeholder="Correo:" required>
+      <textarea formControlName="message" class="form-control" name="message" id="message" placeholder="Mensaje:"
+        rows="3" required></textarea>
+      <div class="contenedor-mensaje">
+        <app-mensaje-formulario *ngIf="showMessage" [textoMensaje]="mensaje" [isSuccess]="success"></app-mensaje-formulario>
+      </div>
       <div class="contenedor-boton">
-        <app-boton [textoBtn]="'Enviar'"></app-boton>
+        <app-boton [textoBtn]="'Enviar'" [type]="'submit'"></app-boton>
       </div>
     </form>
     <app-redes></app-redes>

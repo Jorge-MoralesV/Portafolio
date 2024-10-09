@@ -8,5 +8,6 @@ import { Component, Input } from '@angular/core';
 export class BotonComponent {
 
   @Input() textoBtn: string = '';
+  @Input() type: string = 'button';
 
 }
