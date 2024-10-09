@@ -30,7 +30,7 @@
       <div class="brands" *ngFor="let lenguaje of lenguajes">
         <div>
           <div class="brand">
-            <img [src]="'assets/iconos-herramientas/'+lenguaje+'.svg'" alt={{lenguaje}}>
+            <img loading="lazy" [src]="'assets/iconos-herramientas/'+lenguaje+'.svg'" alt={{lenguaje}}>
           </div>
           <p>{{lenguaje}}</p>
         </div>
@@ -39,7 +39,7 @@
       <div class="brands" *ngFor="let herramienta of herramientas">
         <div>
           <div class="brand">
-            <img [src]="'assets/iconos-herramientas/'+herramienta+'.svg'" alt={{herramienta}}>
+            <img loading="lazy" [src]="'assets/iconos-herramientas/'+herramienta+'.svg'" alt={{herramienta}}>
           </div>
           <p>{{herramienta}}</p>
         </div>
