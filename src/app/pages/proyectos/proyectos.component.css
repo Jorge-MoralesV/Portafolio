@@ -68,6 +68,10 @@
   align-content: center;
 }
 
+.sec2 h3{
+  font-size: xx-large;
+}
+
 .sec2 p {
   font-style: italic;
 }
