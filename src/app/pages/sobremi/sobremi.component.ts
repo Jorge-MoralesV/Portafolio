@@ -12,7 +12,7 @@ export class SobremiComponent {
   tools = false;
 
   lenguajes = [
-    'Java', 'JavaScript', 'TypeScript', 'Php', 'HTML', 'CSS', 'TailwindCSS', 'Bootstrap', 'JQuery', 'SASS'
+    'Java', 'JavaScript', 'TypeScript', 'PHP', 'HTML', 'CSS', 'TailwindCSS', 'Bootstrap', 'JQuery', 'SASS'
   ]
 
   herramientas = [

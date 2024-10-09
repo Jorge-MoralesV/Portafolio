@@ -9,7 +9,7 @@ export class Proyectos {
       descripcion: 'Estudios Sociológicos de El Colegio de México es una revista científica y electrónica, con arbitraje por pares ciegos, enfocada en la publicación de investigaciones empíricas y contribuciones teóricas en sociología y disciplinas afines. Desde su fundación en 1983, Estudios Sociológicos ha tenido como misión presentar los resultados de la investigación de la más alta calidad, con énfasis regional en América Latina, pero con proyección y alcance global.',
       img: ['assets/proyect-cards/escolmex/imagen1.webp', 'assets/proyect-cards/escolmex/imagen2.webp'],
       enlace: 'https://estudiossociologicos.colmex.mx/index.php/es',
-      herramientas: ['OJS', 'HTML', 'CSS', 'Php', 'MySQL', 'JavaScript'],
+      herramientas: ['OJS', 'HTML', 'CSS', 'PHP', 'MySQL', 'JavaScript'],
       extra: [
         { imagen: 'assets/proyect-cards/escolmex/colmex1.webp', texto: 'El trabajo fue reconocido por el director del sitio agradeciendo por los cambios realizados a la plataforma.' },
         { imagen: 'assets/proyect-cards/escolmex/colmex2.webp', texto: 'Así es como anteriormente se veía la revista (como se le conoce a este tipo de sistemas OJS).' }
@@ -36,7 +36,7 @@ export class Proyectos {
       descripcion: 'OpenDots nace como una iniciativa que busca establecer un canal de comunicación y formación masiva en el ámbito de la ciencia abierta.',
       img: ['assets/proyect-cards/opendots/joinopen.webp'],
       enlace: 'https://joinopendots.org/es',
-      herramientas: ['Laravel', 'HTML', 'CSS', 'Php'],
+      herramientas: ['Laravel', 'HTML', 'CSS', 'PHP'],
     },
   ]
 
