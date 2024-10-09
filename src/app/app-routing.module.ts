@@ -4,15 +4,15 @@ import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 
 const routes: Routes = [
+
+  /*  {
+     path: '/', loadChildren: ()=> import('./pages/inicio/inicio.component').then(m=>m.InicioComponent)
+   } */
+
   {
     path: '',
     component: InicioComponent,
-  }/* ,
-  {
-    path: 'proyectos',
-    component: ProyectosComponent,
-  }, */
-
+  }
 ];
 
 @NgModule({
