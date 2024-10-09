@@ -57,7 +57,13 @@ p {
     width: 100%;
   }
 
-  .contenedor-boton {
+  .contenedor-mensaje{
     margin: auto;
+    margin-bottom: 15px;
+  }
+
+  .contenedor-boton {
+    width: 100%;
+    text-align: center;
   }
 }

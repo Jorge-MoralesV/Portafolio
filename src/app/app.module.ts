@@ -17,6 +17,8 @@ import { RedesComponent } from './components/redes/redes.component';
 import { Proyectos } from './proyectos.enviroment';
 import { BotonComponent } from './components/boton/boton.component';
 import { CarruselComponent } from './components/carrusel/carrusel.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MensajeFormularioComponent } from './components/mensaje-formulario/mensaje-formulario.component';
 
 
 @NgModule({
@@ -31,14 +33,17 @@ import { CarruselComponent } from './components/carrusel/carrusel.component';
     RedesComponent,
     BotonComponent,
     CarruselComponent,
-    ExperienciaComponent
+    ExperienciaComponent,
+    MensajeFormularioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     RouterModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [Proyectos],
   bootstrap: [AppComponent]
