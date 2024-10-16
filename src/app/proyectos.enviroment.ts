@@ -57,8 +57,8 @@ export class Proyectos {
       empresa_asosiacion: 'Jorge',
       descripcion_corta: 'Cuestionario Web Desarrollado en React para conocer el clima laboral, guardando los datos en Firebase.',
       descripcion: 'Cuestionario realizado para el Instituto Tecnológico Superior de El Mante, desarrollado para conocer el clima laboral en el que se encuentra el instituto a base de múltiples preguntas.',
-      img: ['assets/proyect-cards/cuestionario/imagen1.webp', 'assets/proyect-cards/cuestionario/imagen2.webp'],
-      enlace: 'https://react-fb-auth-5e96c.web.app/',
+      img: ['assets/proyect-cards/cuestionario/imagen1.webp', 'assets/proyect-cards/cuestionario/imagen2.webp', 'assets/proyect-cards/cuestionario/imagen3.webp'],
+      enlace: 'https://cuestionario-clima-laboral.netlify.app/',
       herramientas: ['React', 'HTML', 'CSS', 'JavaScript', 'TailwindCSS', 'Firebase'],
     },
     {
