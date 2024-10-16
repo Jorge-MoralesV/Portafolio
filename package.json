@@ -1,12 +1,14 @@
 {
   "name": "portafolio",
   "version": "0.0.0",
+  "homepage": "https://jorge-moralesv.github.io/Portafolio/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng build && gh-pages -d dist/portafolio"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +21,7 @@
     "@angular/platform-browser-dynamic": "^16.1.0",
     "@angular/router": "^16.1.0",
     "emailjs-com": "^3.2.0",
+    "gh-pages": "^6.2.0",
     "portafolio": "file:",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
