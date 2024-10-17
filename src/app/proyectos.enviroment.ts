@@ -42,16 +42,6 @@ export class Proyectos {
 
   proyectos = [
     {
-      nombre: 'PokeApiDex',
-      fecha: 'nov. 2023 - feb. 2024',
-      empresa_asosiacion: 'Jorge',
-      descripcion_corta: 'Pokedex desarrollada en Angular usando la PokeApi.',
-      descripcion: 'Sitio web que desempeña la función de Pokedex, desarrollada con el framework de Angular, se implementó la PokeApi para extraer datos y mostrarlos a través de una interfaz estilizada haciendo uso de CSS y Bootstrap.',
-      img: ['assets/proyect-cards/pokeapi/pokedex1.webp', 'assets/proyect-cards/pokeapi/pokedex2.webp', 'assets/proyect-cards/pokeapi/pokedex3.webp'],
-      enlace: 'https://pokeapidex-jmv.netlify.app/',
-      herramientas: ['Angular', 'HTML', 'CSS', 'TypeScript', 'Bootstrap'],
-    },
-    {
       nombre: 'Cuestionario Clima Laboral',
       fecha: 'abr. 2022',
       empresa_asosiacion: 'Jorge',
@@ -60,6 +50,16 @@ export class Proyectos {
       img: ['assets/proyect-cards/cuestionario/imagen1.webp', 'assets/proyect-cards/cuestionario/imagen2.webp', 'assets/proyect-cards/cuestionario/imagen3.webp'],
       enlace: 'https://cuestionario-clima-laboral.netlify.app/',
       herramientas: ['React', 'HTML', 'CSS', 'JavaScript', 'TailwindCSS', 'Firebase'],
+    },
+    {
+      nombre: 'PokeApiDex',
+      fecha: 'nov. 2023 - feb. 2024',
+      empresa_asosiacion: 'Jorge',
+      descripcion_corta: 'Pokedex desarrollada en Angular usando la PokeApi.',
+      descripcion: 'Sitio web que desempeña la función de Pokedex, desarrollada con el framework de Angular, se implementó la PokeApi para extraer datos y mostrarlos a través de una interfaz estilizada haciendo uso de CSS y Bootstrap.',
+      img: ['assets/proyect-cards/pokeapi/pokedex1.webp', 'assets/proyect-cards/pokeapi/pokedex2.webp', 'assets/proyect-cards/pokeapi/pokedex3.webp'],
+      enlace: 'https://pokeapidex-jmv.netlify.app/',
+      herramientas: ['Angular', 'HTML', 'CSS', 'TypeScript', 'Bootstrap'],
     },
     {
       nombre: 'Control de clientes',
