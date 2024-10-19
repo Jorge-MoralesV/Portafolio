@@ -15,6 +15,10 @@ h2 {
   width: 80%;
 }
 
+img{
+  aspect-ratio: 16/9;
+}
+
 .carousel-inner {
   border-radius: 15px;
 }
