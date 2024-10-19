@@ -16,6 +16,16 @@ export class Proyectos {
       ]
     },
     {
+      nombre: 'JoinOpenDots',
+      fecha: 'ene. 2023 - abr. 2023',
+      empresa_asosiacion: 'eScire',
+      descripcion_corta: 'Desarrollado en Laravel, junto con el equipo de eScire, se corrigieron detalles en el diseño de la web y se implementó un formulario de contacto.',
+      descripcion: 'OpenDots nace como una iniciativa que busca establecer un canal de comunicación y formación masiva en el ámbito de la ciencia abierta.',
+      img: ['assets/proyect-cards/opendots/joinopen.webp'],
+      enlace: 'https://joinopendots.org/es',
+      herramientas: ['Laravel', 'HTML', 'CSS', 'PHP'],
+    },
+    {
       nombre: 'EduCA - Demo',
       fecha: 'nov. 2022 - dic. 2022.',
       empresa_asosiacion: 'eScire',
@@ -28,25 +38,29 @@ export class Proyectos {
         { imagen: 'assets/proyect-cards/opendots/joinopen.webp', texto: 'Este sitio web posteriormente evolucionaria como la plataforma JoinOpenDonts' }
       ]
     },
-    {
-      nombre: 'JoinOpenDots',
-      fecha: 'ene. 2023 - abr. 2023',
-      empresa_asosiacion: 'eScire',
-      descripcion_corta: 'Desarrollado en Laravel, junto con el equipo de eScire, se corrigieron detalles en el diseño de la web y se implementó un formulario de contacto.',
-      descripcion: 'OpenDots nace como una iniciativa que busca establecer un canal de comunicación y formación masiva en el ámbito de la ciencia abierta.',
-      img: ['assets/proyect-cards/opendots/joinopen.webp'],
-      enlace: 'https://joinopendots.org/es',
-      herramientas: ['Laravel', 'HTML', 'CSS', 'PHP'],
-    },
   ]
 
   proyectos = [
     {
+      nombre: 'Carga de archivos',
+      fecha: 'abr. 2022 - actualizacón, oct. 2024',
+      empresa_asosiacion: 'Jorge',
+      descripcion_corta: 'Sitio web para guardar archivos en Firebase.',
+      descripcion: 'Sitio web desarrollado con React, que permite al usuario logueado guardar archivos en la base de datos de Firebase, para posteriormente cosultarlo o eliminarlos, actualizado con una interfaz más agradable y mejoras en el funcionamiento.',
+      img: ['assets/proyect-cards/archivos/imagen1.webp', 'assets/proyect-cards/archivos/imagen2.webp', 'assets/proyect-cards/archivos/imagen3.webp'],
+      enlace: 'https://carga-archivos.netlify.app/',
+      herramientas: ['React', 'HTML', 'CSS', 'JavaScript', 'TailwindCSS', 'Firebase'],
+      extra: [
+        { imagen: 'assets/proyect-cards/archivos/extra1.webp', texto: 'Estas son algunas capturas del proyecto realizado en el 2022 (Login).' },
+        { imagen: 'assets/proyect-cards/archivos/extra2.webp', texto: 'Estas son algunas capturas del proyecto realizado en el 2022 (Inicio).' }
+      ]
+    },
+    {
       nombre: 'Cuestionario Clima Laboral',
-      fecha: 'abr. 2022',
+      fecha: 'abr. 2022 - actualización, sep. 2024',
       empresa_asosiacion: 'Jorge',
       descripcion_corta: 'Cuestionario Web Desarrollado en React para conocer el clima laboral, guardando los datos en Firebase.',
-      descripcion: 'Cuestionario realizado para el Instituto Tecnológico Superior de El Mante, desarrollado para conocer el clima laboral en el que se encuentra el instituto a base de múltiples preguntas.',
+      descripcion: 'Cuestionario realizado para el Instituto Tecnológico Superior de El Mante, desarrollado para conocer el clima laboral en el que se encuentra el instituto a base de múltiples preguntas, actualizado con mejoras en el funcionamiento e interfaz.',
       img: ['assets/proyect-cards/cuestionario/imagen1.webp', 'assets/proyect-cards/cuestionario/imagen2.webp', 'assets/proyect-cards/cuestionario/imagen3.webp'],
       enlace: 'https://cuestionario-clima-laboral.netlify.app/',
       herramientas: ['React', 'HTML', 'CSS', 'JavaScript', 'TailwindCSS', 'Firebase'],
@@ -63,7 +77,7 @@ export class Proyectos {
     },
     {
       nombre: 'Control de clientes',
-      fecha: 'ago. 2023',
+      fecha: 'feb. 2024',
       empresa_asosiacion: 'Jorge',
       descripcion_corta: 'CRUD desarrollado en Angular para la gestión de clientes.',
       descripcion: 'Sistema el cual fue creado a partir de un curso, implementando mejores características al original, con un diseño mejorado y responsivo, manejando datos con Firebase.',

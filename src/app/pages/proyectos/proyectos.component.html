@@ -8,7 +8,7 @@
   <div class="proyectos d-flex justify-content-center flex-wrap">
 
     <h2>Desarrollado en eScire</h2>
-    <p>Aquí hay algunos de los proyectos en los que trabaje en eScire.</p>
+    <p>Aquí hay algunos de los proyectos en los que trabaje o realice en eScire.</p>
 
     <div class="d-flex" *ngFor="let item of escire; let i = index">
       <div class="proyecto col-12">
@@ -19,7 +19,7 @@
 
         <div [ngClass]="i%2==0 ? 'sec2' : 'sec2 order-0'">
           <h3>{{item.nombre}}</h3>
-          <p class="nombre-empresa">{{item.empresa_asosiacion}}, {{item.fecha}}</p>
+          <p class="nombre-empresa">{{item.empresa_asosiacion}}: {{item.fecha}}</p>
           <img loading="lazy" class="imagen-proyecto" src={{item.img[0]}} alt="Imagen del proyecto">
           <p class="text-center descripcion">{{item.descripcion_corta}}</p>
           <div class="brands" *ngFor="let brand of item.herramientas">
@@ -41,7 +41,7 @@
   <div class="proyectos d-flex justify-content-center flex-wrap">
 
     <h2>Desarrollado por mí</h2>
-    <p>Aquí hay algunos de los proyectos que he realizado.</p>
+    <p>Aquí hay algunos de los proyectos que he realizado en mi tiempo como estudiante o fuera de.</p>
 
     <div class="d-flex" *ngFor="let item of proyectos; let i = index">
 
@@ -53,7 +53,7 @@
 
         <div [ngClass]="i%2==0 ? 'sec2' : 'sec2 order-0'">
           <h3>{{item.nombre}}</h3>
-          <p class="nombre-empresa">{{item.empresa_asosiacion}}, {{item.fecha}}</p>
+          <p class="nombre-empresa">{{item.empresa_asosiacion}}: {{item.fecha}}</p>
           <img loading="lazy" class="imagen-proyecto" src={{item.img[0]}} alt="Imagen del proyecto">
           <p class="text-center descripcion">{{item.descripcion_corta}}</p>
           <div class="brands" *ngFor="let brand of item.herramientas">
@@ -88,7 +88,7 @@
       </div>
 
       <div class="modal-body">
-        <p>{{proyectoActual?.empresa_asosiacion}}, {{proyectoActual?.fecha}}</p>
+        <p>{{proyectoActual?.empresa_asosiacion}}: {{proyectoActual?.fecha}}</p>
         <app-carrusel [imagenes]="proyectoActual?.img" />
         <div class="contenedor-body">
 
