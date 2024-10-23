@@ -11,11 +11,27 @@ export class SobremiComponent {
   tools = false;
 
   lenguajes = [
-    'Java', 'JavaScript', 'TypeScript', 'PHP', 'HTML', 'CSS', 'TailwindCSS', 'Bootstrap', 'JQuery', 'SASS'
+    'Angular',
+    'Bootstrap',
+    'CSS',
+    'Firebase',
+    'HTML',
+    'Java',
+    'JavaScript',
+    'JQuery',
+    'Laravel',
+    'MySQL',
+    'PHP',
+    'React',
+    'SASS',
+    'SQLite',
+    'SQLServer',
+    'TailwindCSS',
+    'TypeScript',
   ]
 
   herramientas = [
-    'AdobeXD', 'Angular', 'Canva', 'Figma', 'Laravel', 'MySQL', 'OJS', 'SQLite', 'SQLServer', 'React', 'Firebase'
+    'AdobeXD', 'Canva', 'Figma', 'OJS'
   ]
 
   constructor() { }

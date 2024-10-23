@@ -14,17 +14,20 @@
       <div class="proyecto col-12">
 
         <div [ngClass]="i%2==0 ? 'sec1' : 'sec1 order-1'">
-          <img loading="lazy" class="imagen-proyecto" src={{item.img[0]}} alt="Imagen del proyecto">
+          <img loading="lazy" class="imagen-proyecto" src={{item.img[0]}} alt="Imagen del proyecto" width="1600"
+            height="900">
         </div>
 
         <div [ngClass]="i%2==0 ? 'sec2' : 'sec2 order-0'">
           <h3>{{item.nombre}}</h3>
           <p class="nombre-empresa">{{item.empresa_asosiacion}}: {{item.fecha}}</p>
-          <img loading="lazy" class="imagen-proyecto" src={{item.img[0]}} alt="Imagen del proyecto">
+          <img loading="lazy" class="imagen-proyecto" src={{item.img[0]}} alt="Imagen del proyecto" width="1600"
+            height="900">
           <p class="text-center descripcion">{{item.descripcion_corta}}</p>
           <div class="brands" *ngFor="let brand of item.herramientas">
             <div class="brand">
-              <img loading="lazy" [src]="'assets/iconos-herramientas/' + brand + '.svg'" alt="" width="20" height="20">
+              <img loading="lazy" [src]="'assets/iconos-herramientas/' + brand + '.svg'" alt="herramienta" width="20"
+                height="20">
             </div>
             <p class="nombre-brand">{{brand}}</p>
           </div>
@@ -48,17 +51,20 @@
       <div class="proyecto col-12">
 
         <div [ngClass]="i%2==0 ? 'sec1' : 'sec1 order-1'">
-          <img loading="lazy" class="imagen-proyecto" src={{item.img[0]}} alt="Imagen del proyecto">
+          <img loading="lazy" class="imagen-proyecto" src={{item.img[0]}} alt="Imagen del proyecto" width="1600"
+            height="900">
         </div>
 
         <div [ngClass]="i%2==0 ? 'sec2' : 'sec2 order-0'">
           <h3>{{item.nombre}}</h3>
           <p class="nombre-empresa">{{item.empresa_asosiacion}}: {{item.fecha}}</p>
-          <img loading="lazy" class="imagen-proyecto" src={{item.img[0]}} alt="Imagen del proyecto">
+          <img loading="lazy" class="imagen-proyecto" src={{item.img[0]}} alt="Imagen del proyecto" width="1600"
+            height="900">
           <p class="text-center descripcion">{{item.descripcion_corta}}</p>
           <div class="brands" *ngFor="let brand of item.herramientas">
             <div class="brand">
-              <img loading="lazy" [src]="'assets/iconos-herramientas/' + brand + '.svg'" alt="" width="20" height="20">
+              <img loading="lazy" [src]="'assets/iconos-herramientas/' + brand + '.svg'" alt="herramienta" width="20"
+                height="20">
             </div>
             <p class="nombre-brand">{{brand}}</p>
           </div>
@@ -99,7 +105,7 @@
 
           <div *ngFor="let item of proyectoActual?.extra">
             <div [ngClass]="item?.extra > 0 ? 'extra-proyecto d-none' : 'extra-proyecto d-block'">
-              <img loading="lazy" src={{item?.imagen}} alt="" width="500">
+              <img loading="lazy" src={{item?.imagen}} alt="imagen extra" width="1600" height="900">
               <p>{{item?.texto}}</p>
             </div>
           </div>
@@ -111,7 +117,8 @@
         <div class="herramientas">
           <div class="brands" *ngFor="let brand of proyectoActual?.herramientas">
             <div class="brand">
-              <img loading="lazy" [src]="'assets/iconos-herramientas/' + brand + '.svg'" alt="" width="20" height="20">
+              <img loading="lazy" [src]="'assets/iconos-herramientas/' + brand + '.svg'" alt="herramienta" width="20"
+                height="20">
             </div>
           </div>
         </div>
