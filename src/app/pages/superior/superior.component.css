@@ -40,7 +40,7 @@ section {
 }
 
 .contenedor-nombre .area{
-  text-decoration: underline;
+  text-decoration: underline wavy #0072ff;
 }
 
 .foto {
