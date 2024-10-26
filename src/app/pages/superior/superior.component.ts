@@ -34,7 +34,8 @@ import { Component } from '@angular/core';
 })
 export class SuperiorComponent {
 
-  public name: string = `Hola, Soy Jorge`;
-  public title: string = `Desarrollador Web / FrontEnd 👨‍💻`;
+  public name: string = `Soy Jorge`;
+  public title: string = `Desarrollador Web`;
+  public area: string = `FrontEnd 👨‍💻`
 
 }

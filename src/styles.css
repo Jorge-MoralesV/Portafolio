@@ -13,7 +13,3 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
-
-.Active{
-  background-color: red;
-}

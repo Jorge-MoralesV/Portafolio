@@ -25,8 +25,13 @@ section {
 }
 
 .contenedor-nombre h1 {
-  font-size: 100px;
   color: #fff;
+  font-size: 80px;
+}
+.contenedor-nombre h2{
+  color: #fff;
+  font-size: 100px;
+  font-family: cursive, sans-serif;
 }
 
 .contenedor-nombre p {
@@ -58,6 +63,9 @@ section {
   }
 
   .contenedor-nombre h1 {
+    font-size: 50px;
+  }
+  .contenedor-nombre h2 {
     font-size: 60px;
   }
 
@@ -69,6 +77,9 @@ section {
 @media screen and (max-width: 550px) {
   .contenedor-nombre h1 {
     font-size: clamp(4rem, 2vw + 1rem, 5rem);
+  }
+  .contenedor-nombre h2 {
+    font-size: clamp(4rem, 2vw + 4rem, 5rem);
   }
 
   .contenedor-nombre p {

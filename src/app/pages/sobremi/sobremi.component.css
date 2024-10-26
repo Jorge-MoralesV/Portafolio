@@ -40,7 +40,7 @@
 }
 
 .container .botones .derecho {
-  border-bottom: #A1E887 0.5px solid;
+  border-bottom: #26c4ff 0.5px solid;
   background: rgba(0, 0, 0, 0.3);
 }
 
@@ -138,12 +138,12 @@
   padding: 20px;
   margin: 5px;
   border-radius: 10px;
-  transition: .3s ease-in-out;
+  transition: .2s ease-in-out;
   align-content: center;
 }
 
 .herramientas .brands .brand:hover {
-  background-color: #ffffff;
+  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.30);
 }
 
 .herramientas .brands .brand img {
