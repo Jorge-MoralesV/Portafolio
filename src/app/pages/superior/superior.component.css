@@ -39,6 +39,10 @@ section {
   color: #fff;
 }
 
+.contenedor-nombre .area{
+  text-decoration: underline;
+}
+
 .foto {
   width: 50%;
 }
