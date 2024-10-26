@@ -4,19 +4,21 @@
 <section class="container">
 
   <div class="botones">
-    <button [className]="tools ? 'derecho' : 'izquierdo'" (click)="cambio(false)" id="btn-left">Acerca de</button>
+    <button [className]="tools ? 'derecho' : 'izquierdo'" (click)="cambio(false)" id="btn-left">Acerca de mí</button>
     <button [className]="tools ? 'izquierdo' : 'derecho'" (click)="cambio(true)" id="btn-right">Herramientas</button>
   </div>
 
   <div class="contenido" id="contenido">
     <!-- Acerca de -->
     <div class="acerca-de" *ngIf="tools === false">
-      <p class="descripcion">Egresado de la carrera de ingeniería de
+      <p class="descripcion">
+        {{descripcion}}
+        <!-- Egresado de la carrera de ingeniería de
         sistemas computacionales, apasionado por el desarrollo de aplicaciones y el mantenimiento y soporte de hardware.
         <br>
         Con sólidos conocimientos en programación, diseño de sistemas y resolución de problemas técnicos. Comprometido
         con la
-        innovación y la mejora continua en el ámbito tecnológico.
+        innovación y la mejora continua en el ámbito tecnológico. -->
       </p>
 
       <app-experiencia></app-experiencia>

@@ -16,8 +16,8 @@ export class ProyectosComponent implements OnInit {
   constructor(private _proyectos: Proyectos, private _proyectosEscire: Proyectos) { }
 
   ngOnInit(): void {
-    this.escire = this._proyectosEscire.getItemsEscire();
-    this.proyectos = this._proyectos.getItems();
+    /* this.escire = this._proyectosEscire.getProyectsEscire(); */
+    this.proyectos = this._proyectos.getProyects();
   }
 
   abrirEnlace(url: string) {
