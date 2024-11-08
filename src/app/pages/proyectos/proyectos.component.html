@@ -1,51 +1,12 @@
-<br id="proyectos">
-<section class="page d-flex justify-content-center flex-wrap container">
+<section id="proyectos" class="page d-flex justify-content-center flex-wrap container">
 
   <div class="encabezado">
     <h1 class="title">Proyectos</h1>
   </div>
 
-<!--   <div class="proyectos d-flex justify-content-center flex-wrap">
-
-    <h2>Desarrollado en eScire</h2>
-    <p>Aquí hay algunos de los proyectos en los que trabaje o realice en eScire.</p>
-
-    <div class="d-flex" *ngFor="let item of escire; let i = index">
-      <div class="proyecto col-12">
-
-        <div [ngClass]="i%2==0 ? 'sec1' : 'sec1 order-1'">
-          <img loading="lazy" class="imagen-proyecto" src={{item.img[0]}} alt="Imagen del proyecto" width="1600"
-            height="900">
-        </div>
-
-        <div [ngClass]="i%2==0 ? 'sec2' : 'sec2 order-0'">
-          <h3>{{item.nombre}}</h3>
-          <p class="nombre-empresa">{{item.empresa_asosiacion}}: {{item.fecha}}</p>
-          <img loading="lazy" class="imagen-proyecto" src={{item.img[0]}} alt="Imagen del proyecto" width="1600"
-            height="900">
-          <p class="text-center descripcion">{{item.descripcion_corta}}</p>
-          <div class="brands" *ngFor="let brand of item.herramientas">
-            <div class="brand">
-              <img loading="lazy" [src]="'assets/iconos-herramientas/' + brand + '.svg'" alt="herramienta" width="20"
-                height="20">
-            </div>
-            <p class="nombre-brand">{{brand}}</p>
-          </div>
-          <div class="text-center">
-            <app-boton (click)="abrirModal('escire', i)" [textoBtn]="'Detalles'" data-bs-toggle="modal"
-              data-bs-target="#modalProjects" />
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div> -->
-
   <div class="proyectos d-flex justify-content-center flex-wrap">
 
-    <!-- <h2>Desarrollado por mí</h2>
-    <p>Aquí hay algunos de los proyectos que he realizado en mi tiempo como estudiante o fuera de.</p> -->
-    <p>A continuación algunos de los proyectos en los que he trabajado:</p>
+    <p>A continuación algunos de los proyectos en los que he trabajado:</p>
 
     <div class="d-flex" *ngFor="let item of proyectos; let i = index">
 
@@ -95,7 +56,7 @@
       </div>
 
       <div class="modal-body">
-        <p>{{proyectoActual?.empresa_asosiacion}}: {{proyectoActual?.fecha}}</p>
+        <p>{{proyectoActual?.empresa_asosiacion}} {{proyectoActual?.fecha}}</p>
         <app-carrusel [imagenes]="proyectoActual?.img" />
         <div class="contenedor-body">
 

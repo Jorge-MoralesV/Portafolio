@@ -1,25 +1,25 @@
 <nav [class.scrollarriba]="true" [class.scrollabajo]="scrollVisible" class="navbar navbar-expand-lg fixed-top">
   <div class="container-fluid container">
+    <div class="li-name">
+      <a (click)="scrollToSection('/')" class="nav-link text-white name">👨‍💻 Jorge Morales Viveros</a>
+    </div>
     <button class="navbar-toggler" type="button" data-bs-target="#my-nav" data-bs-toggle="collapse"
       aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div id="my-nav" class="collapse navbar-collapse contenido-navbar">
       <ul class="navbar-nav">
-        <li class="li-name">
-          <a href="#/" class="nav-link text-white name">👨‍💻 Jorge Morales Viveros</a>
+        <li class="nav-item">
+          <a (click)="scrollToSection('/')" class="nav-link text-white enlace">Inicio</a>
         </li>
         <li class="nav-item">
-          <a href="#/" class="nav-link text-white enlace">Home</a>
+          <a (click)="scrollToSection('acerca-de')" class="nav-link text-white enlace">Acerca de</a>
         </li>
         <li class="nav-item">
-          <a href="#acerca-de" class="nav-link text-white enlace">Acerca de</a>
+          <a (click)="scrollToSection('proyectos')" class="nav-link text-white enlace">Proyectos</a>
         </li>
         <li class="nav-item">
-          <a href="#proyectos" class="nav-link text-white enlace">Proyectos</a>
-        </li>
-        <li class="nav-item">
-          <a href="#contact" class="nav-link text-white enlace">Contacto</a>
+          <a (click)="scrollToSection('contacto')" class="nav-link text-white enlace">Contacto</a>
         </li>
       </ul>
     </div>

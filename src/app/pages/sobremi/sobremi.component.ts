@@ -31,7 +31,7 @@ export class SobremiComponent {
   ]
 
   herramientas = [
-    'AdobeXD', 'Canva', 'Figma', 'OJS'
+    'AdobeXD', 'Canva', 'Figma', 'Git', 'GitHub', 'OJS'
   ]
 
   constructor() { }
@@ -40,13 +40,8 @@ export class SobremiComponent {
     this.tools = false;
   }
 
-  /* public description: String = `Mi nombre es Jorge Morales Viveros, egresado de la carrera de ingeniería de
-  sistemas computacionales, me especializo en las áreas de Frontend y Backend. Al trabajar en equipo
-  tengo iniciativa y proactividad, lo que me permite analizar y crear soluciones favoreciendo el
-  avance de los proyectos aportando mis ideas en momentos oportunos o decisivos.
-  Apasionado por el desarrollo de aplicaciones y el mantenimiento y soporte de hardware. Egresado con sólidos conocimientos en programación, diseño de sistemas y resolución de problemas técnicos. Comprometido con la innovación y la mejora continua en el ámbito tecnológico.`; */
   public descripcion: String = `Apasionado por el diseño y desarrollo de aplicaciones web y móviles que permitan crear experiencias de usuario atractivas y funcionales usando tecnologías como Angular o React.
-Siempre busco aprender y adaptarme a las últimas tendencias en desarrollo, con un compromiso constante hacia la mejora continua y la innovación en cada proyecto que emprendo.`;
+Siempre busco aprender y adaptarme a las últimas tendencias en desarrollo, con un compromiso constante hacia la mejora continua y la innovación en cada proyecto que emprendo.`;
 
   cambio(change: boolean) {
     this.tools = change;

@@ -1,15 +1,6 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  scroll-behavior: smooth;
-}
-
 /*Contenedor*/
 .container {
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 10px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
+  padding-top: 100px;
   color: #fff;
   text-align: center;
 }
@@ -34,19 +25,27 @@
   border: none;
 }
 
-.container .botones .izquierdo {
-  border-radius: 10px 10px 0px 0px !important;
-  background: rgba(255, 255, 255, 0);
+.container .botones .disabled,
+.container .botones .enable {
+  border: 0.5px solid transparent;
 }
 
-.container .botones .derecho {
-  border-bottom: #26c4ff 0.5px solid;
-  background: rgba(0, 0, 0, 0.3);
+.container .botones .disabled {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0);
 }
 
+.container .botones .enable:hover {
+  border-bottom-color: #ff653f;
+}
+
+.container .botones .disabled:hover {
+  border-color: #fff;
+}
 
 /* Contenido */
 .contenido {
+  margin-top: 10px;
   padding: 50px;
 }
 
@@ -60,61 +59,28 @@
   padding-bottom: 50px;
 }
 
-/* Tarjetas */
-.tarjetas {
-  display: flex;
-  margin-top: 5%;
-}
-
-.tarjetas .tarjeta {
-  background: #fff;
-  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.25);
-  color: #000;
-  margin: 5px;
-  text-align: center;
-}
-
-.tarjetas .tarjeta img {
-  margin-top: -15%;
-  width: 30%;
-  margin-bottom: 20px;
-}
-
-.tarjetas .tarjeta h3 {
-  color: rgba(255, 103, 0, 1);
-}
-
-.tarjetas .tarjeta p {
-  margin: 20px;
-}
-
-.back {
-  border-radius: 20px 0px 0px 20px;
-}
-
-.front {
-  border-radius: 0px 20px 20px 0px;
-}
-
 /*---- Herramientas -----*/
 .herramientas {
   margin-bottom: 50px;
 }
 
-.herramientas .lenguajes {
+.herramientas .lenguajes,
+.herramientas .software {
   text-align: left;
-  padding-bottom: 10px;
-  border-bottom: 2px solid rgb(255, 255, 255);
   margin-left: 150px;
   margin-right: 150px;
 }
 
+hr{
+  border: 1px #fff solid;
+}
+
+.herramientas .lenguajes {
+  text-align: left;
+}
+
 .herramientas .software {
   text-align: right;
-  padding-bottom: 10px;
-  border-bottom: 2px solid rgb(255, 255, 255);
-  margin-left: 150px;
-  margin-right: 150px;
 }
 
 .lenguajes,

@@ -1,5 +1,6 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { Component } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject } from '@angular/core';
 
 @Component({
   selector: 'app-superior',
@@ -21,10 +22,12 @@ import { Component } from '@angular/core';
     ]),
     trigger('enterImg', [
       state('void', style({
+        transform: 'translateX(50px)',
         opacity: 0
       })),
       transition(':enter', [
-        animate(800, style({
+        animate(700, style({
+          transform: 'translateX(0)',
           transition: 'opacity ease-in',
           opacity: 1
         }))
@@ -33,9 +36,17 @@ import { Component } from '@angular/core';
   ]
 })
 export class SuperiorComponent {
+  constructor(@Inject(DOCUMENT) private document: Document) { }
+
+  goProyects(sectionId: string) {
+    const element = this.document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 
   public name: string = `Soy Jorge`;
-  public title: string = `Desarrollador Web`;
-  public area: string = `FrontEnd 👨‍💻`
+  public title: string = `Desarrollador Web 💻`;
+  public area: string = `FrontEnd 🎨`
 
 }

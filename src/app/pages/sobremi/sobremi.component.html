@@ -1,24 +1,17 @@
-<br id="acerca-de">
-<br>
-<br>
-<section class="container">
+<section id="acerca-de" class="container">
 
   <div class="botones">
-    <button [className]="tools ? 'derecho' : 'izquierdo'" (click)="cambio(false)" id="btn-left">Acerca de mí</button>
-    <button [className]="tools ? 'izquierdo' : 'derecho'" (click)="cambio(true)" id="btn-right">Herramientas</button>
+    <button [className]="tools ? 'disabled ms-0 me-1' : 'transparency-efect enable ms-0 me-1'"
+      (click)="cambio(false)">Acerca de mí</button>
+    <button [className]="tools ? 'transparency-efect enable ms-1 me-0' : 'disabled ms-1 me-0'"
+      (click)="cambio(true)">Herramientas</button>
   </div>
 
-  <div class="contenido" id="contenido">
+  <div class="contenido transparency-efect" id="contenido">
     <!-- Acerca de -->
     <div class="acerca-de" *ngIf="tools === false">
       <p class="descripcion">
         {{descripcion}}
-        <!-- Egresado de la carrera de ingeniería de
-        sistemas computacionales, apasionado por el desarrollo de aplicaciones y el mantenimiento y soporte de hardware.
-        <br>
-        Con sólidos conocimientos en programación, diseño de sistemas y resolución de problemas técnicos. Comprometido
-        con la
-        innovación y la mejora continua en el ámbito tecnológico. -->
       </p>
 
       <app-experiencia></app-experiencia>
@@ -29,6 +22,7 @@
     <div class="herramientas" id="herramientas" *ngIf="tools === true">
       <p class="descripcion">Aquí algunos de los lenguajes y tecnologías que he llegado a usar en mis proyectos.</p>
       <h2 class="lenguajes">Lenguajes y Tecnologias</h2>
+      <hr>
       <div class="brands" *ngFor="let lenguaje of lenguajes">
         <div>
           <div class="brand">
@@ -38,6 +32,7 @@
         </div>
       </div>
       <h2 class="software">Herramientas y Software</h2>
+      <hr>
       <div class="brands" *ngFor="let herramienta of herramientas">
         <div>
           <div class="brand">

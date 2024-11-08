@@ -1,8 +1,11 @@
 .navbar {
-  background: rgba(255, 255, 255, 0.15);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
   margin: 0;
+  backdrop-filter: blur(40px);
+}
+
+.navbar-collapse {
+  flex-grow: 0;
 }
 
 ul {
@@ -14,24 +17,26 @@ li {
   margin-right: 10px;
 }
 
-a {
+.enlace {
   width: 100%;
   margin-left: 10px;
   margin-right: 10px;
   text-align: center;
-  border-radius: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid transparent;
 }
 
-a:hover {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 5px;
-  text-align: center;
-  transition: .5s linear;
+.enlace:hover {
+  border-bottom: 1px #ff653f solid;
+  transition: .2s linear;
 }
 
 .name {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 5px;
+  text-align: center;
+  padding: 8px;
+  cursor: pointer;
 }
 
 .scrollarriba {
@@ -41,20 +46,16 @@ a:hover {
 }
 
 .scrollabajo {
-  background-color: #1b283d;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   transition: .5s ease;
 }
 
-@media screen and (max-width: 990px) {
-  .contenido-navbar {
-    background: #45464ac5;
-    border-radius: 10px;
-  }
+.navbar-toggler {
+  border: none;
+  /* Elimina el borde del botón */
+}
 
-  .name {
-    background-color: transparent;
-  }
+@media screen and (max-width: 990px) {
 
   a {
     width: 100%;

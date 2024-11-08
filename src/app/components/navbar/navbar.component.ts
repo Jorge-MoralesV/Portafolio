@@ -1,4 +1,6 @@
-import { Component, HostListener } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, ElementRef, HostListener, Inject, Renderer2, ViewChild } from '@angular/core';
+import { Proyectos } from 'src/app/proyectos.enviroment';
 
 @Component({
   selector: 'app-navbar',
@@ -8,6 +10,15 @@ import { Component, HostListener } from '@angular/core';
 export class NavbarComponent {
 
   scrollVisible = false;
+
+  constructor(private renderer: Renderer2, @Inject(DOCUMENT) private document: Document) { }
+
+  scrollToSection(sectionId: string) {
+    const element = this.document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 
   @HostListener('window:scroll', [])
   onscroll(): void {

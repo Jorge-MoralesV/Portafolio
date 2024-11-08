@@ -6,10 +6,22 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(108deg, #000 0%, #00245A 100%);
+  background: linear-gradient(108deg, #001B45 0%, #000 100%);
 }
 
 /*Scroll*/
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
+} */
+
+.bg-white {
+  background: green !important;
+  transition: 1.5s ease-in;
+}
+
+/* Fondo transaparencia*/
+.transparency-efect {
+  background-color: rgba(255, 255, 255, 0.10);
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }

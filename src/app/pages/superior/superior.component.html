@@ -1,15 +1,17 @@
-<div id="/"></div>
-<section>
+<section id="/">
   <div class="container">
 
     <div @enterTitle class="contenedor-nombre">
       <h1>Hola,</h1>
       <h2>{{name}}</h2>
-      <p>{{title}} /</p>
-      <p class="area">{{area}}</p>
+      <div class="titulo">
+        <p>{{title}} /</p>
+        <p class="area">{{area}}</p>
+      </div>
+      <app-boton (click)="goProyects('proyectos')" [textoBtn]="'Ver proyectos ⇩'"></app-boton>
     </div>
 
-    <div @enterImg class="foto">
+    <div @enterImg class="contenedor-foto">
       <img loading="lazy" src="assets/foto.webp" alt="Jorge Morales Viveros" width="200" height="200">
     </div>
 
