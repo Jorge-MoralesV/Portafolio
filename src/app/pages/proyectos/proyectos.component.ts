@@ -23,10 +23,9 @@ export class ProyectosComponent implements OnInit {
   isElementInView(element: HTMLElement) {
     const rect = element.getBoundingClientRect();
     return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth));
+      //Verifica si la parte superior esta debajo de la altura del viewport y la parte inferior esta por encima del punto 0
+      rect.top < (window.innerHeight || document.documentElement.clientHeight) && rect.bottom > 0
+    );
   }
 
   @HostListener('window:scroll', [])
