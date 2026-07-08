@@ -17,7 +17,7 @@ export class Proyectos {
     },
     {
       nombre: 'JoinOpenDots',
-      fecha: 'ene. 2023 - abr. 2023',
+      fecha: 'abr. 2023',
       empresa_asosiacion: 'eScire:',
       descripcion_corta: 'Desarrollado en Laravel, junto con el equipo de eScire, se corrigieron detalles en el diseño de la web y se implementó un formulario de contacto.',
       descripcion: 'OpenDots nace como una iniciativa que busca establecer un canal de comunicación y formación masiva en el ámbito de la ciencia abierta.',
@@ -27,7 +27,7 @@ export class Proyectos {
     },
     {
       nombre: 'EduCA - Demo',
-      fecha: 'nov. 2022 - dic. 2022.',
+      fecha: 'dic. 2022.',
       empresa_asosiacion: 'eScire:',
       descripcion_corta: 'Proyecto desarrollado en Angular, recreando los bocetos recibidos en plantillas HTML para ser visualizadas en la web.',
       descripcion: 'SciELO Brasil necesitaba encontrar una forma de ofrecer material de estudio y aprendizaje abierto a todo el público por su aniversario 25°, por lo que “EduCA” se formó a partir de estas necesidades.',
@@ -40,7 +40,7 @@ export class Proyectos {
     },
     {
       nombre: 'Carga de archivos',
-      fecha: 'abr. 2022 - actualizacón, oct. 2024',
+      fecha: 'oct. 2024',
       empresa_asosiacion: '',
       descripcion_corta: 'Sitio web para guardar archivos de distintos tipos como JPG/JPEG, PDF, entre otros utilizando Firebase.',
       descripcion: 'Sitio web desarrollado con React, que permite al usuario logueado guardar archivos en la base de datos de Firebase, para posteriormente cosultarlo o eliminarlos, actualizado con una interfaz más agradable y mejoras en el funcionamiento.',
@@ -54,7 +54,7 @@ export class Proyectos {
     },
     {
       nombre: 'Cuestionario Clima Laboral',
-      fecha: 'abr. 2022 - actualización, sep. 2024',
+      fecha: 'sep. 2024',
       empresa_asosiacion: '',
       descripcion_corta: 'Cuestionario web utilizando React para evaluar el ambiente de trabajo en el Instituto Tecnológico Superior de El Mante.',
       descripcion: 'Cuestionario realizado para el Instituto Tecnológico Superior de El Mante para evaluar el clima laboral, permite a los usuarios proporcionar sus opiniones y experiencias a base de múltiples preguntas, facilitando la recopilación de información para mejorar el ambiente de trabajo.',
@@ -64,7 +64,7 @@ export class Proyectos {
     },
     {
       nombre: 'PokeApiDex',
-      fecha: 'nov. 2023 - feb. 2024',
+      fecha: 'feb. 2024',
       empresa_asosiacion: '',
       descripcion_corta: 'Pokedex desarrollada en Angular usando la PokeApi.',
       descripcion: 'Sitio web que desempeña la función de una Pokedex, desarrollada con Angular. Se implementó la PokeApi para extraer datos sobre los Pokémon, presentándolos a través de una interfaz estilizada que combina CSS y Bootstrap.',
