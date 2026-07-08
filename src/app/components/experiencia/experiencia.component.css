@@ -17,6 +17,7 @@
 }
 
 .descripcion-1,
+.descripcion-3,
 .img-experiencia-2 {
   margin-left: auto;
 }
@@ -33,7 +34,8 @@
 }
 
 .descripcion-1,
-.descripcion-2 {
+.descripcion-2,
+.descripcion-3 {
   border: 1px solid #fff;
   border-radius: 10px;
   max-width: 500px;
@@ -45,21 +47,27 @@
   padding: 10px;
 }
 
-.descripcion-1 hr {
-  color: #ff1100;
+.descripcion-1 hr{
+  color: chartreuse;
 }
 
 .descripcion-2 hr {
+  color: #ff1100;
+}
+
+.descripcion-3 hr {
   color: #0091ff;
 }
 
 .descripcion-1 h2,
-.descripcion-2 h2 {
+.descripcion-2 h2,
+.descripcion-3 h2 {
   margin-bottom: 5px;
 }
 
 .descripcion-1 p,
-.descripcion-2 p {
+.descripcion-2 p,
+.descripcion-3 p {
   color: #ACACAC;
   margin-top: 5px;
 }
@@ -81,7 +89,8 @@ p {
   }
 
   .descripcion-1 h2,
-  .descripcion-2 h2 {
+  .descripcion-2 h2,
+  .descripcion-3 h2 {
     margin-top: 30px;
   }
 
