@@ -22,6 +22,7 @@ export class SobremiComponent {
     'Laravel',
     'MySQL',
     'PHP',
+    'Python',
     'React',
     'SASS',
     'SQLite',
@@ -31,7 +32,7 @@ export class SobremiComponent {
   ]
 
   herramientas = [
-    'AdobeXD', 'Canva', 'Figma', 'Git', 'GitHub', 'OJS'
+    'AdobeXD', 'Canva', 'Figma', 'Git', 'GitHub', 'Linux', 'Netlify', 'OJS', 
   ]
 
   constructor() { }

@@ -2,6 +2,26 @@ export class Proyectos {
 
   proyectos = [
     {
+      nombre: 'Sistema de Almacén',
+      fecha: 'marzo 2026.',
+      empresa_asosiacion: 'Hotel Cumbres del Cielo:',
+      descripcion_corta: 'Página web que permite al huesped consultar los menús y actividades de las instalaciones del hotel durante su estancia.',
+      descripcion: 'HC&C - Habitación nace con el proposito de que el huesped tenga la facilidad de consultar la información escaneando un QR de los ménus y actividades que se llevan a cabo en las instalaciones del hotel, haciendo mas comoda su estadia.',
+      img: ['assets/proyect-cards/almacen/almacen.png'],
+      enlace: 'https://sistema-almacen.netlify.app/',
+      herramientas: ['Angular', 'HTML', 'CSS', 'TypeScript', 'Python', 'Bootstrap', 'MySQL'],
+    },
+    {
+      nombre: 'Hotel Cumbres - Habitación',
+      fecha: 'enero 2026.',
+      empresa_asosiacion: 'Hotel Cumbres del Cielo:',
+      descripcion_corta: 'Página web que permite al huesped consultar los menús y actividades de las instalaciones del hotel durante su estancia.',
+      descripcion: 'HC&C - Habitación nace con el proposito de que el huesped tenga la facilidad de consultar la información escaneando un QR de los ménus y actividades que se llevan a cabo en las instalaciones del hotel, haciendo mas comoda su estadia.',
+      img: ['assets/proyect-cards/cumbres/hcyc-h.png'],
+      enlace: 'https://hcyc-habitacion.netlify.app/',
+      herramientas: ['Angular', 'HTML', 'CSS', 'TypeScript', 'Bootstrap'],
+    },
+    {
       nombre: 'Estudios Sociológicos de COLMEX',
       fecha: 'abril 2023.',
       empresa_asosiacion: 'eScire - Colmex:',
