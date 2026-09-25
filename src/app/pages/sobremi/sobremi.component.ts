@@ -50,7 +50,7 @@ Siempre busco aprender y adaptarme a las últimas tendencias en desarrollo, con 
   }
 
   goCv() {
-    window.open('https://drive.google.com/file/d/1NNMMTDnngxNzKtz5jLOhD5xTb63Bk5GI/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1LMPEG40OQGDphaDEsje-MaTfFKuZ_HsI/view?usp=drivesdk', '_blank');
   }
 
 }
