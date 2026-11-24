@@ -14,6 +14,7 @@ export class SobremiComponent {
     'Angular',
     'Bootstrap',
     'CSS',
+    'Csharp',
     'Firebase',
     'HTML',
     'Java',
@@ -25,6 +26,7 @@ export class SobremiComponent {
     'Python',
     'React',
     'SASS',
+    'Spring',
     'SQLite',
     'SQLServer',
     'TailwindCSS',
@@ -32,7 +34,7 @@ export class SobremiComponent {
   ]
 
   herramientas = [
-    'AdobeXD', 'Canva', 'Figma', 'Git', 'GitHub', 'Linux', 'Netlify', 'OJS', 
+    'AdobeXD', 'Canva', 'Claude', 'Figma', 'Gemini', 'Git', 'GitHub', 'Linux', 'Netlify', 'Notion', 'OJS', 'Postman', 'VSCode', 'WordPress', 
   ]
 
   constructor() { }

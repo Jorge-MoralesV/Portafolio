@@ -46,7 +46,7 @@ export class SuperiorComponent {
   }
 
   public name: string = `Soy Jorge`;
-  public title: string = `Desarrollador Web 💻`;
-  public area: string = `FrontEnd 🎨`
+  public title: string = `Desarrollador Web `;
+  public area: string = `FullStack 💻`
 
 }
