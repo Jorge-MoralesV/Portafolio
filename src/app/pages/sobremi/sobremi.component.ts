@@ -34,7 +34,7 @@ export class SobremiComponent {
   ]
 
   herramientas = [
-    'AdobeXD', 'Canva', 'Claude', 'Figma', 'Gemini', 'Git', 'GitHub', 'Linux', 'Netlify', 'Notion', 'OJS', 'Postman', 'VSCode', 'WordPress', 
+    'AdobeXD', 'Canva', 'Claude', 'Figma', 'Gemini', 'Git', 'GitHub', 'Linux', 'Netlify', 'Notion', 'OJS', 'Postman', 'VSCode', 'WordPress',
   ]
 
   constructor() { }
@@ -52,7 +52,7 @@ Siempre busco aprender y adaptarme a las últimas tendencias en desarrollo, con 
   }
 
   goCv() {
-    window.open('https://drive.google.com/file/d/1LMPEG40OQGDphaDEsje-MaTfFKuZ_HsI/view?usp=drivesdk', '_blank');
+    window.open('https://drive.google.com/file/d/1mQEtxvKdl0LgR4eB3jLFov5JFbnxDV8c/view?usp=drivesdk', '_blank');
   }
 
 }
